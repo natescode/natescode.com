@@ -1,0 +1,17 @@
+{
+  "name": "razorweb",
+  "version": "8.3.0",
+  "description": "Piranha CMS Web Template For Razor Pages",
+  "main": "index.js",
+  "author": "Piranha CMS",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "gulp": "^4.0.2",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "postcss": "^8.2.14",
+    "tailwindcss": "^2.1.2"
+  }
+}
