@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using Piranha.AttributeBuilder;
 using Piranha.Models;
 
-namespace natescode.Models
+namespace Piranha.Models
 {
     [PostType(Title = "Standard post")]
     public class StandardPost  : Post<StandardPost>

@@ -1,6 +1,6 @@
 using System;
 
-namespace natescode.Models
+namespace Piranha.Models
 {
     public class SaveCommentModel
     {

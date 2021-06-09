@@ -8,9 +8,9 @@ using Piranha.Extend;
 using Piranha.Extend.Fields;
 using Piranha.Extend.Blocks;
 using Piranha.Models;
-using natescode.Models;
+using Piranha.Models;
 
-namespace natescode.Controllers
+namespace Piranha.Controllers
 {
     /// <summary>
     /// This controller is only used when the project is first started

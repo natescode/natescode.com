@@ -4,9 +4,9 @@ using Microsoft.AspNetCore.Mvc;
 using Piranha;
 using Piranha.AspNetCore.Services;
 using Piranha.Models;
-using natescode.Models;
+using Piranha.Models;
 
-namespace natescode.Controllers
+namespace Piranha.Controllers
 {
     [ApiExplorerSettings(IgnoreApi = true)]
     public class CmsController : Controller

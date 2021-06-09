@@ -4,13 +4,14 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using natescode.Models;
 using Piranha;
 using Piranha.AttributeBuilder;
 using Piranha.AspNetCore.Identity.SQLite;
 using Piranha.Data.EF.SQLite;
 using Piranha.Manager.Editor;
 
-namespace natescode
+namespace Piranha
 {
     public class Startup
     {
@@ -79,6 +80,9 @@ namespace natescode
 
             // Initialize Piranha
             App.Init(api);
+
+            // Register custom blocks
+            App.Blocks.Register<FirstBlock>();
 
             // Build content types
             new ContentTypeBuilder(api)
