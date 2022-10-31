@@ -1,7 +1,7 @@
 ---
 title: "GIT Aliases for the WIN"
 date: 2015-01-01T00:03:46-05:00
-draft: true
+draft: false
 ---
 
 ## Git Aliases for the win
@@ -63,4 +63,4 @@ git master = git checkout master
 
 ## Conclusion
 
-Hope this was helpful. All my Git config changes can be found here.
+Hope this was helpful. All my Git config changes can be found [here](https://gist.github.com/natescode/aed203bb2826628993a67dfadb22302a).

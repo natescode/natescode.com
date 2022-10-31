@@ -1,10 +1,8 @@
 ---
 title: "Fake Developers"
 date: 2015-01-01T00:03:46-05:00
-draft: truei
+draft: true
 ---
-
-# The Fake Developer
 
 Welcome to another Beyond Code series blog post. Today, we're covering something kinda negative, fake gurus and fake senior developers.
 
