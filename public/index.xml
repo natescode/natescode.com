@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>natescode blog</title>
+    <link>https://example.com/</link>
+    <description>Recent content on natescode blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All Rights Reserved</copyright>
+    <lastBuildDate>Thu, 23 Mar 2023 14:54:18 -0500</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>&#39;This&#39; That and Dispatch</title>
+      <link>https://example.com/posts/2023/03/this-that-and-dispatch/</link>
+      <pubDate>Thu, 23 Mar 2023 14:54:18 -0500</pubDate>
+      
+      <guid>https://example.com/posts/2023/03/this-that-and-dispatch/</guid>
+      <description>There are numerous blogs and videos about Javascript&amp;rsquo;s this keyword. In my opinion, virtually all of them fall short and fail to even mention dispatch or binding.
+As always, I encourage polyglot programming. So I&amp;rsquo;ll be showing examples is Javascript, C#, Go and Rust.
+Back to the basics First, let us cover some really basic but critical Javascript.
+function greet(name) { console.log(`hello, ${name}`); } function greet() { console.log(`hello, stranger`); } greet(&amp;#34;natescode&amp;#34;); Which function is called?</description>
+    </item>
+    
+    <item>
+      <title>GIT Aliases for the WIN</title>
+      <link>https://example.com/posts/2015/01/git-aliases-for-the-win/</link>
+      <pubDate>Thu, 01 Jan 2015 00:03:46 -0500</pubDate>
+      
+      <guid>https://example.com/posts/2015/01/git-aliases-for-the-win/</guid>
+      <description>Git Aliases for the win productivity Git, while a powerful tool, has in my humble opinion a terrible API. I&amp;rsquo;m going to cover some aliases and configuration changes I&amp;rsquo;ve made.
+git cm &amp;#34;message&amp;#34; # Equates to git commit -m &amp;#34;message&amp;#34; git save &amp;#34;message&amp;#34; # Equates to git add -A &amp;amp;&amp;amp; git commit -m &amp;amp;&amp;amp; git push # \*push automatically does git --set-upstream-branch thanks to the [push] configuration I show late.r git wipe # Equates to git reset --hard git feat # Creates a new feature branch and checks it out.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://example.com/about/</link>
+      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/about/</guid>
+      <description>I&amp;rsquo;m Nathan, you can call me Nate. I write code. This is where I rant about code best practices and show off my current projects. I pride myself on being unbias. I care about facts. I care about getting features shipped to clients. I care about helping others learned to code. All the other stuff is just noise. I don&amp;rsquo;t care to get &amp;rsquo;likes&amp;rsquo;, &amp;rsquo;thumbs up&amp;rsquo;, &amp;lsquo;followers&amp;rsquo; or any money from my NatesCode projects outside of my clients that pay me.</description>
+    </item>
+    
+    <item>
+      <title>TEST</title>
+      <link>https://example.com/posts/2011/10/test/</link>
+      <pubDate>Sun, 23 Oct 2011 00:03:46 -0500</pubDate>
+      
+      <guid>https://example.com/posts/2011/10/test/</guid>
+      <description>Hello world
+this is a test
+lorem ipsum</description>
+    </item>
+    
+  </channel>
+</rss>

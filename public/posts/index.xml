@@ -1,0 +1,368 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on natescode blog</title>
+        <link>https://example.com/posts/</link>
+        <description>Recent content in Posts on natescode blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <copyright>All Rights Reserved</copyright>
+        <lastBuildDate>Thu, 23 Mar 2023 14:54:18 -0500</lastBuildDate>
+        <atom:link href="https://example.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>&#39;This&#39; That and Dispatch</title>
+            <link>https://example.com/posts/2023/03/this-that-and-dispatch/</link>
+            <pubDate>Thu, 23 Mar 2023 14:54:18 -0500</pubDate>
+            
+            <guid>https://example.com/posts/2023/03/this-that-and-dispatch/</guid>
+            <description>There are numerous blogs and videos about Javascript&amp;rsquo;s this keyword. In my opinion, virtually all of them fall short and fail to even mention dispatch or binding.
+As always, I encourage polyglot programming. So I&amp;rsquo;ll be showing examples is Javascript, C#, Go and Rust.
+Back to the basics First, let us cover some really basic but critical Javascript.
+function greet(name) { console.log(`hello, ${name}`); } function greet() { console.log(`hello, stranger`); } greet(&amp;#34;natescode&amp;#34;); Which function is called?</description>
+            <content type="html"><![CDATA[<p>There are numerous blogs and videos about Javascript&rsquo;s <code>this</code> keyword. In my opinion, virtually all of them fall short and
+fail to even mention <code>dispatch</code> or <code>binding</code>.</p>
+<p>As always, I encourage polyglot programming. So I&rsquo;ll be showing examples is Javascript, C#, Go and Rust.</p>
+<h2 id="back-to-the-basics">Back to the basics</h2>
+<p>First, let us cover some <em>really</em> basic but critical Javascript.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">greet</span>(<span style="color:#a6e22e">name</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`hello, </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">greet</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`hello, stranger`</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">greet</span>(<span style="color:#e6db74">&#34;natescode&#34;</span>);
+</span></span></code></pre></div><p><strong>Which function is called?</strong></p>
+<p>If you said the first function, that is <em>incorrect</em>.</p>
+<p>Javascript <em>ONLY</em> cares about the function name, not the parameters. In the case of duplicate function names, the last one defined wins; just like CSS.</p>
+<h2 id="methods-vs-functions">Methods vs Functions</h2>
+<p>Now, when we get to methods, somethings change. Let us make our previous example use methods.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">Alice</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">greet</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">name</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`hello, </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">Bob</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">greet</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">greet</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`hello, stranger`</span>);
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">person</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Alice</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">person</span>.<span style="color:#a6e22e">Greet</span>(<span style="color:#e6db74">&#34;natescode&#34;</span>);
+</span></span></code></pre></div><p>Now, even though <code>Alice</code> and <code>Bob</code> both have <code>greet</code> functions, there is no longer a name conflict! Hey, I though Javascript functions had to have unique names? They do, but not methods! Because methods are functions that are related to a specific function. They have their own scope / context.</p>
+<p>Now let&rsquo;s change the example to use the object&rsquo;s context.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">Alice</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Alysan&#34;</span>,
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">Bob</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Robert&#34;</span>,
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">greet</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`hello, stranger. I am </span><span style="color:#e6db74">${</span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// they&#39;ll both use the same function as a method
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">Alice</span>.<span style="color:#a6e22e">greet</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">greet</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Bob</span>.<span style="color:#a6e22e">greet</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">greet</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Alice</span>.<span style="color:#a6e22e">greet</span>(<span style="color:#e6db74">&#34;NatesCode&#34;</span>);
+</span></span></code></pre></div><p>You&rsquo;ll see I changed the <code>greet</code> methods back to a single function. I did this to highlight the fact that methods are just functions executed within an specific object&rsquo;s context. Technically, ALL javascript functions are methods since everything is on the <code>window</code> object. The plain <code>greet</code> function will <em>not</em> return <code>null</code> or <code>undefined</code> because the <code>name</code> exists as <code>window.name</code>; it is usually an empty string though.</p>
+<p>You&rsquo;ll the two lines that associate the <code>Greet</code> function with both the <code>Alice</code> and <code>Bob</code> objects.</p>
+<p>When we call their respecitve <code>greet</code> methods, the output changes based on the object the function was called on. Methods, unlike functions, have a special parameter called the <em>receiver</em>. This is <em>really</em> obvious in <code>Go</code> where the receiver parameter comes before the method name, the same order we call it in.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// &#39;this&#39; could be called anything since it is just a parameter.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// normally it would be called `person` by convention
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">this</span> <span style="color:#a6e22e">Person</span>) <span style="color:#a6e22e">greet</span>(<span style="color:#a6e22e">name</span> <span style="color:#66d9ef">string</span>){
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;hello, &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">this</span>.<span style="color:#a6e22e">name</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="still-unclear-oh-my">Still unclear? Oh MY!</h2>
+<p>To clear up how <code>this</code> works. I show you an example in English. Here
+is a script for you to read.</p>
+<pre tabindex="0"><code>  Hello, my name is [your name], and today . . .
+</code></pre><p>Did you say &ldquo;your name&rdquo; or did you say your actual name? &ldquo;you&rdquo; and &ldquo;me&rdquo; and &ldquo;my&rdquo; are relative! They don&rsquo;t refer to the same person all the time. It depends <em>WHO</em> says it!</p>
+<p>Let&rsquo;s change the code example to read more like English and say
+&ldquo;my name is Alice&rdquo;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">Alice</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Alysan&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">greet</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">my</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`My name is </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">my</span>.<span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">Bob</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Robert&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">greet</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">my</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`My name is </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">my</span>.<span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Alice</span>.<span style="color:#a6e22e">greet</span>(); <span style="color:#75715e">// My name is Alysan
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">Bob</span>.<span style="color:#a6e22e">greet</span>(); <span style="color:#75715e">// My name is Robert
+</span></span></span></code></pre></div><h2 id="dispatch">Dispatch</h2>
+<p>Ok. So hopefully now <code>this</code> is starting to make sense. We are now going to take the minecar into the cave of deeper knowledge! Let&rsquo;s talk about dispatch!</p>
+<p>First a code example. Can you tell me which method will be run?</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">Alice</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Alysan&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">greet</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">my</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`My name is </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">my</span>.<span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">Bob</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Robert&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">greet</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">my</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`My name is </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">my</span>.<span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// we are picking Alice or Bob at random.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// Nothing else important about this code
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">friend</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">random</span>() <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0.5</span> <span style="color:#f92672">?</span> <span style="color:#a6e22e">Alice</span> <span style="color:#f92672">:</span> <span style="color:#a6e22e">Bob</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">friend</span>.<span style="color:#a6e22e">greet</span>();
+</span></span></code></pre></div><p>Hopefully, you answered <code>no, I cannot predict something inherently random!</code>. My point exactly. This is called <code>dynamic dispatch</code> or <code>late binding</code>. Those are just fancy terms for <code>Let's figure out which method to call on which object when we RUN the code, not before</code></p>
+<p>In statically typed languages, we know for 100% certainty which type <code>friend</code> will be, before the code runs.</p>
+<h2 id="c-dispatch">C# Dispatch</h2>
+<p>Let&rsquo;s translate that example into C#</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Alice</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">string</span> name = <span style="color:#e6db74">&#34;Alysan&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">public</span> Alice(){
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> greet(){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> my = <span style="color:#66d9ef">this</span>;
+</span></span><span style="display:flex;"><span>    Console.Writeline(<span style="color:#e6db74">$&#34;My name is {my.name}&#34;</span>)
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Bob</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">string</span> name = <span style="color:#e6db74">&#34;Robert&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">public</span> Bob(){
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> greet(){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> my = <span style="color:#66d9ef">this</span>;
+</span></span><span style="display:flex;"><span>    Console.Writeline(<span style="color:#e6db74">$&#34;My name is {my.name}&#34;</span>)
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// csharp does have VAR but that just infers the type</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// it isn&#39;t dynamic</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> friend = Math.random() &gt; <span style="color:#ae81ff">0.5</span> ? Alice : Bob;
+</span></span><span style="display:flex;"><span>friend.greet();
+</span></span></code></pre></div><p>This code won&rsquo;t even compile. We&rsquo;ll get an `` error. Because we
+don&rsquo;t know which type friend is going to be. The most direct translation would change the last two lines to look like this.</p>
+<h3 id="using-dynamic">Using <code>dynamic</code></h3>
+<p>** NEVER DO THIS **</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// NEVER, EVER, EVER, for the love of keeping your job</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// and not being replaced by AI, NEVER EVER DO THIS!!!!</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">dynamic</span> friend = Math.random() &gt; <span style="color:#ae81ff">0.5</span> ? Alice : Bob;
+</span></span><span style="display:flex;"><span>friend.greet();
+</span></span></code></pre></div><p>Now friend&rsquo;s type is not set until we run the code. This will work. Just don&rsquo;t do it! Promise? Okay.</p>
+<h3 id="using-interface">Using <code>interface</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#75715e">// we define an interface that has a greet method</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">IGreetable</span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">void</span> greet();
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Alice</span>: IGreetable {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">string</span> name = <span style="color:#e6db74">&#34;Alysan&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">public</span> Alice(){
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> greet(){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> my = <span style="color:#66d9ef">this</span>;
+</span></span><span style="display:flex;"><span>    Console.Writeline(<span style="color:#e6db74">$&#34;My name is {my.name}&#34;</span>)
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Bob</span>: IGreetable {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">string</span> name = <span style="color:#e6db74">&#34;Robert&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">public</span> Bob(){
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> greet(){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> my = <span style="color:#66d9ef">this</span>;
+</span></span><span style="display:flex;"><span>    Console.Writeline(<span style="color:#e6db74">$&#34;My name is {my.name}&#34;</span>)
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// csharp does have VAR but that just infers the type</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// it isn&#39;t dynamic</span>
+</span></span><span style="display:flex;"><span>IGreetable friend = Math.random() &gt; <span style="color:#ae81ff">0.5</span> ? Alice : Bob;
+</span></span><span style="display:flex;"><span>friend.greet();
+</span></span></code></pre></div><p>Now, friend is of a shared type <code>iGreetable</code>. An interface is a type that defines which methods should exist on an object. Now we don&rsquo;t care if we get an <code>Alice</code> or <code>Bob</code>, we are <em>ONLY</em> looking for any object that fits
+the <code>IGreetable</code> interface, in this case that means anything with a <code>greet</code> method that take no parameters and returns nothing.</p>
+<blockquote>
+<p>NOTE: statically typed languages do differentiate between methods/functions with different number of parameters, parameter types and return types. <code>greet</code> with a return type or parameter of <code>string name</code> would be a different method all together</p>
+</blockquote>
+<h3 id="using-inheritance">Using Inheritance</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#75715e">// we define an interface that has a greet method</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Person</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> greet(){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> my = <span style="color:#66d9ef">this</span>;
+</span></span><span style="display:flex;"><span>    Console.Writeline(<span style="color:#e6db74">$&#34;My name is {my.name}&#34;</span>)
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Alice</span>: Person {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">string</span> name = <span style="color:#e6db74">&#34;Alysan&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">public</span> Alice(){
+</span></span><span style="display:flex;"><span>    super();
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Bob</span>: Person {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">string</span> name = <span style="color:#e6db74">&#34;Robert&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">public</span> Bob(){
+</span></span><span style="display:flex;"><span>    super();
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// csharp does have VAR but that just infers the type</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// it isn&#39;t dynamic</span>
+</span></span><span style="display:flex;"><span>Person friend = Math.random() &gt; <span style="color:#ae81ff">0.5</span> ? Alice : Bob;
+</span></span><span style="display:flex;"><span>friend.greet();
+</span></span></code></pre></div><p>Inheritance look similar to interfaces. <code>Bob</code> and <code>Alice</code> both inherit from the <code>Person</code> object. You can think of inheritance as a compiler-assisted copy-paste. So Alice doesn&rsquo;t have her own <code>greet</code> method anymore but that is okay because her parent does! Similar to have Javascript&rsquo;s prototypal inheritance works.</p>
+<h3 id="using-sum-types">Using Sum Types</h3>
+<p>I wasn&rsquo;t going to include this one, but man it is too good to pass up. I&rsquo;m going to write this example in language of the gods, <code>Rust</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#75715e">// define a Person struct with a greet method
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Person</span> {
+</span></span><span style="display:flex;"><span>    name: String,
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">impl</span> Person {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">greet</span>(<span style="color:#f92672">&amp;</span>self) {
+</span></span><span style="display:flex;"><span>        println!(<span style="color:#e6db74">&#34;My name is </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span>, self.name);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// define an enum for friend type
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">enum</span> <span style="color:#a6e22e">Friend</span> {
+</span></span><span style="display:flex;"><span>    Alice,
+</span></span><span style="display:flex;"><span>    Bob,
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// create Alice and Bob structs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> alice <span style="color:#f92672">=</span> Person { name: String::from(<span style="color:#e6db74">&#34;Alysan&#34;</span>) };
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> bob <span style="color:#f92672">=</span> Person { name: String::from(<span style="color:#e6db74">&#34;Robert&#34;</span>) };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// randomly choose between Alice and Bob
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> friend <span style="color:#f92672">=</span> <span style="color:#66d9ef">if</span> rand::random() { Friend::Alice } <span style="color:#66d9ef">else</span> { Friend::Bob };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// call greet method on chosen friend
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">match</span> friend {
+</span></span><span style="display:flex;"><span>    Friend::Alice <span style="color:#f92672">=&gt;</span> alice.greet(),
+</span></span><span style="display:flex;"><span>    Friend::Bob <span style="color:#f92672">=&gt;</span> bob.greet(),
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>** BTW the above Rust code was generated by Chat GPT. I had it translate the previous C# code into rust but use enums for the friend type. The FUUUUTUUURE! (INSERT Spongebob Squidward &ldquo;future!&rdquo; GIF)</p>
+<p>You&rsquo;ll see that Rust defines an enum type which is just a type that combines two more types, type addition aka Algebraic Data Types.</p>
+<p>Friend is of the shared type. Then at runtime, we check which variant of Friend we have and call the approprait method. This isn&rsquo;t dynmic dispatch because we KNOW the type of Friend before the code runs. There is some <em>dynamic</em> checking however which comes with a small performance overhead. The enum is like a C union but with a bit that tells us which variant we currently have.</p>
+<p>Effectively, enums make types into values. Like a <code>string name</code> in C# must always be a string but can change to different values.</p>
+<h2 id="and-beyond">And Beyond!</h2>
+<p>We could go further and start talking about VTABLES and FAT POINTERS etc but I think that is best saved for another blog post and video. I really hope this helps. Constructive feedback is encouraged and welcome.</p>
+<p>Until next time</p>
+<p><code>return 0;</code></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>GIT Aliases for the WIN</title>
+            <link>https://example.com/posts/2015/01/git-aliases-for-the-win/</link>
+            <pubDate>Thu, 01 Jan 2015 00:03:46 -0500</pubDate>
+            
+            <guid>https://example.com/posts/2015/01/git-aliases-for-the-win/</guid>
+            <description>Git Aliases for the win productivity Git, while a powerful tool, has in my humble opinion a terrible API. I&amp;rsquo;m going to cover some aliases and configuration changes I&amp;rsquo;ve made.
+git cm &amp;#34;message&amp;#34; # Equates to git commit -m &amp;#34;message&amp;#34; git save &amp;#34;message&amp;#34; # Equates to git add -A &amp;amp;&amp;amp; git commit -m &amp;amp;&amp;amp; git push # \*push automatically does git --set-upstream-branch thanks to the [push] configuration I show late.r git wipe # Equates to git reset --hard git feat # Creates a new feature branch and checks it out.</description>
+            <content type="html"><![CDATA[<h2 id="git-aliases-for-the-win">Git Aliases for the win</h2>
+<p>productivity
+Git, while a powerful tool, has in my humble opinion a terrible API. I&rsquo;m going to cover some aliases and configuration changes I&rsquo;ve made.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#ae81ff">git cm &#34;message&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Equates to git commit -m &#34;message&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">git save &#34;message&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Equates to git add -A &amp;&amp; git commit -m &amp;&amp; git push</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># \*push automatically does git --set-upstream-branch thanks to the [push] configuration I show late.r</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">git wipe</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Equates to git reset --hard</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">git feat</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Creates a new feature branch and checks it out.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">git feat new-feature</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Will do git checkout -b feature/new-feature</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">git syncod</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Fetch latest</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Merged the latest from origin/develop into the current branch.</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">push</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># I use this before pushing my branch and making a pull request.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># git sync origin/develop is the manual way to choose which origin and branch to sync</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">git squash</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># While squashing is a concept, it isn&#39;t an actual command in GIT.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># If you want to make the last N commits into a single commit then you squash. I prefer this to keep a clean GIT history before pushing and pull requesting.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#Auto Setup Remote</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#Ever get this error ?</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#Image description</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#Then you have to run:</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">git push --set-upstream origin master</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#You can avoid this with</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">push]</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">default = current</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">autoSetupRemote = true</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">pull]</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">default = current</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">Branch shortcuts</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">git dev = git checkout develop</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">git main = git checkout main</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">git master = git checkout master</span>
+</span></span></code></pre></div><h2 id="conclusion">Conclusion</h2>
+<p>Hope this was helpful. All my Git config changes can be found <a href="https://gist.github.com/natescode/aed203bb2826628993a67dfadb22302a">here</a>.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>TEST</title>
+            <link>https://example.com/posts/2011/10/test/</link>
+            <pubDate>Sun, 23 Oct 2011 00:03:46 -0500</pubDate>
+            
+            <guid>https://example.com/posts/2011/10/test/</guid>
+            <description>Hello world
+this is a test
+lorem ipsum</description>
+            <content type="html"><![CDATA[<p>Hello world</p>
+<p>this is a test</p>
+<p>lorem ipsum</p>
+]]></content>
+        </item>
+        
+    </channel>
+</rss>
