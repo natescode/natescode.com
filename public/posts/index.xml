@@ -1,20 +1,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on natescode blog</title>
-        <link>https://example.com/posts/</link>
+        <link>https://natescode.com/posts/</link>
         <description>Recent content in Posts on natescode blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>All Rights Reserved</copyright>
         <lastBuildDate>Thu, 23 Mar 2023 14:54:18 -0500</lastBuildDate>
-        <atom:link href="https://example.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://natescode.com/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
             <title>&#39;This&#39; That and Dispatch</title>
-            <link>https://example.com/posts/2023/03/this-that-and-dispatch/</link>
+            <link>https://natescode.com/posts/2023/03/this-that-and-dispatch/</link>
             <pubDate>Thu, 23 Mar 2023 14:54:18 -0500</pubDate>
             
-            <guid>https://example.com/posts/2023/03/this-that-and-dispatch/</guid>
+            <guid>https://natescode.com/posts/2023/03/this-that-and-dispatch/</guid>
             <description>There are numerous blogs and videos about Javascript&amp;rsquo;s this keyword. In my opinion, virtually all of them fall short and fail to even mention dispatch or binding.
 As always, I encourage polyglot programming. So I&amp;rsquo;ll be showing examples is Javascript, C#, Go and Rust.
 Back to the basics First, let us cover some really basic but critical Javascript.
@@ -281,86 +281,6 @@ the <code>IGreetable</code> interface, in this case that means anything with a <
 <p>We could go further and start talking about VTABLES and FAT POINTERS etc but I think that is best saved for another blog post and video. I really hope this helps. Constructive feedback is encouraged and welcome.</p>
 <p>Until next time</p>
 <p><code>return 0;</code></p>
-]]></content>
-        </item>
-        
-        <item>
-            <title>GIT Aliases for the WIN</title>
-            <link>https://example.com/posts/2015/01/git-aliases-for-the-win/</link>
-            <pubDate>Thu, 01 Jan 2015 00:03:46 -0500</pubDate>
-            
-            <guid>https://example.com/posts/2015/01/git-aliases-for-the-win/</guid>
-            <description>Git Aliases for the win productivity Git, while a powerful tool, has in my humble opinion a terrible API. I&amp;rsquo;m going to cover some aliases and configuration changes I&amp;rsquo;ve made.
-git cm &amp;#34;message&amp;#34; # Equates to git commit -m &amp;#34;message&amp;#34; git save &amp;#34;message&amp;#34; # Equates to git add -A &amp;amp;&amp;amp; git commit -m &amp;amp;&amp;amp; git push # \*push automatically does git --set-upstream-branch thanks to the [push] configuration I show late.r git wipe # Equates to git reset --hard git feat # Creates a new feature branch and checks it out.</description>
-            <content type="html"><![CDATA[<h2 id="git-aliases-for-the-win">Git Aliases for the win</h2>
-<p>productivity
-Git, while a powerful tool, has in my humble opinion a terrible API. I&rsquo;m going to cover some aliases and configuration changes I&rsquo;ve made.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#ae81ff">git cm &#34;message&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Equates to git commit -m &#34;message&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">git save &#34;message&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Equates to git add -A &amp;&amp; git commit -m &amp;&amp; git push</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># \*push automatically does git --set-upstream-branch thanks to the [push] configuration I show late.r</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">git wipe</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Equates to git reset --hard</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">git feat</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Creates a new feature branch and checks it out.</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">git feat new-feature</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Will do git checkout -b feature/new-feature</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">git syncod</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Fetch latest</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Merged the latest from origin/develop into the current branch.</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">push</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># I use this before pushing my branch and making a pull request.</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># git sync origin/develop is the manual way to choose which origin and branch to sync</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">git squash</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># While squashing is a concept, it isn&#39;t an actual command in GIT.</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># If you want to make the last N commits into a single commit then you squash. I prefer this to keep a clean GIT history before pushing and pull requesting.</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#Auto Setup Remote</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#Ever get this error ?</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#Image description</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#Then you have to run:</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">git push --set-upstream origin master</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#You can avoid this with</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">push]</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">default = current</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">autoSetupRemote = true</span>
-</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">pull]</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">default = current</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">Branch shortcuts</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">git dev = git checkout develop</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">git main = git checkout main</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">git master = git checkout master</span>
-</span></span></code></pre></div><h2 id="conclusion">Conclusion</h2>
-<p>Hope this was helpful. All my Git config changes can be found <a href="https://gist.github.com/natescode/aed203bb2826628993a67dfadb22302a">here</a>.</p>
-]]></content>
-        </item>
-        
-        <item>
-            <title>TEST</title>
-            <link>https://example.com/posts/2011/10/test/</link>
-            <pubDate>Sun, 23 Oct 2011 00:03:46 -0500</pubDate>
-            
-            <guid>https://example.com/posts/2011/10/test/</guid>
-            <description>Hello world
-this is a test
-lorem ipsum</description>
-            <content type="html"><![CDATA[<p>Hello world</p>
-<p>this is a test</p>
-<p>lorem ipsum</p>
 ]]></content>
         </item>
         

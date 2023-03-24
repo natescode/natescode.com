@@ -2,65 +2,65 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.com/fr/about/</loc>
+    <loc>https://natescode.com/fr/about/</loc>
     <lastmod>2014-04-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/about/"
+                href="https://natescode.com/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://example.com/fr/about/"
+                href="https://natescode.com/fr/about/"
                 />
   </url><url>
-    <loc>https://example.com/fr/categories/</loc>
+    <loc>https://natescode.com/fr/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/categories/"
+                href="https://natescode.com/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://example.com/fr/categories/"
+                href="https://natescode.com/fr/categories/"
                 />
   </url><url>
-    <loc>https://example.com/fr/</loc>
+    <loc>https://natescode.com/fr/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/"
+                href="https://natescode.com/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://example.com/fr/"
+                href="https://natescode.com/fr/"
                 />
   </url><url>
-    <loc>https://example.com/fr/series/</loc>
+    <loc>https://natescode.com/fr/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/series/"
+                href="https://natescode.com/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://example.com/fr/series/"
+                href="https://natescode.com/fr/series/"
                 />
   </url><url>
-    <loc>https://example.com/fr/tags/</loc>
+    <loc>https://natescode.com/fr/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/tags/"
+                href="https://natescode.com/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://example.com/fr/tags/"
+                href="https://natescode.com/fr/tags/"
                 />
   </url>
 </urlset>
