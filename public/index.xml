@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>natescode blog</title>
+    <link>https://natescode.com/</link>
+    <description>Recent content on natescode blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All Rights Reserved</copyright>
+    <lastBuildDate>Thu, 23 Mar 2023 14:54:18 -0500</lastBuildDate><atom:link href="https://natescode.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>&#39;This&#39; That and Dispatch</title>
+      <link>https://natescode.com/posts/2023/03/this-that-and-dispatch/</link>
+      <pubDate>Thu, 23 Mar 2023 14:54:18 -0500</pubDate>
+      
+      <guid>https://natescode.com/posts/2023/03/this-that-and-dispatch/</guid>
+      <description>There are numerous blogs and videos about Javascript&amp;rsquo;s this keyword. In my opinion, virtually all of them fall short and fail to even mention dispatch or binding.
+As always, I encourage polyglot programming. So I&amp;rsquo;ll be showing examples is Javascript, C#, Go and Rust.
+Back to the basics First, let us cover some really basic but critical Javascript.
+function greet(name) { console.log(`hello, ${name}`); } function greet() { console.log(`hello, stranger`); } greet(&amp;#34;natescode&amp;#34;); Which function is called?</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://natescode.com/about/</link>
+      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://natescode.com/about/</guid>
+      <description>I&amp;rsquo;m Nathan, you can call me Nate. I write code. This is where I rant about code best practices and show off my current projects. I pride myself on being unbias. I care about facts. I care about getting features shipped to clients. I care about helping others learned to code. All the other stuff is just noise. I don&amp;rsquo;t care to get &amp;rsquo;likes&amp;rsquo;, &amp;rsquo;thumbs up&amp;rsquo;, &amp;lsquo;followers&amp;rsquo; or any money from my NatesCode projects outside of my clients that pay me.</description>
+    </item>
+    
+  </channel>
+</rss>
