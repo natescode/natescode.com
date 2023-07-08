@@ -58,7 +58,7 @@ $$ \sqrt(n) $$
 
 So for any building size N. We can solve it in
 
-$ 2\sqrt(n)$ tries. For N=100, that is 20.
+$ \sqrt(n)$ tries. For N=100, that is 20.
 
 <!-- But the problem with that is that after jumping 10 floors then we jump 10 more which means we are now at 11 tries. We want to find the equalibrium where no matter which floor the orb breaks on, the number of tries is the same.
 
@@ -166,7 +166,7 @@ Now, we can only have a whole floor number so we round to the nearest number and
 
 I used [demos](https://www.desmos.com) to chart the formula out. You can see the [chart here](https://www.desmos.com/calculator/yaxygr4jvi). Or enjoy the screenshot below.
 
-![Parabola touching 13.6 on the x axis](../images/parabola.png)
+![Parabola touching 13.6 on the x axis](/images/parabola.png)
 
 So `n=14`. Which means that we start at floor n, `14` then move `n-1` floors to `27`. We continue moving one less floor each time.
 
