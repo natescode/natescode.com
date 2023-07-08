@@ -120,7 +120,7 @@ $$ .5n^2 + .5n - 100 = 0 $$
 
 BOOM! we have a quadratic formula we can solve.
 
-For example. If we want to add all the numbers up to `10` we can pair up the numbers to make 10.
+<!-- For example. If we want to add all the numbers up to `10` we can pair up the numbers to make 10.
 
     10+0
     9+1
@@ -136,7 +136,7 @@ $${.5n^2 * .5n } = 100 $$
 
 If we simplify the formula we'll notice something.
 
-$${.5n^2-.5n }  - 100 = 0 $$
+$${.5n^2-.5n }  - 100 = 0 $$ -->
 
 Remember your quadratics? Yeah! That's just a quadratic formula that we can solve!
 
@@ -230,11 +230,11 @@ function findFloor(n) {
 }
 ```
 
-## Do the steps
+<!-- ## Do the steps
 
 The previous code just found the initial floors. Let's actually solve it.
 
-We'll assume we have an Egg object with a 'try' method that take the 'n' number of the floor and returns a boolean if it breaks.
+We'll assume we have an Egg object with a 'try' method that take the 'n' number of the floor and returns a boolean if it breaks. -->
 
 ---
 
