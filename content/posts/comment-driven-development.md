@@ -1,5 +1,5 @@
 ---
-title: "How to Know What to Code"
+title: "Comment Driven Development"
 date: 2023-03-26T02:28:19-05:00
 draft: true
 toc: false
@@ -9,10 +9,11 @@ tags:
 ---
 
 One of my students asked a great question along the lines of "how long did it take you until you could code without being stuck or having to look things up?". I
-replied "it took years", which it did.
+replied "it took years", which it did to code at a professional level. I picked up programming pretty quickly by teaching myself in high school. One of my first programs was calculating the
+quadratic formula, then later I moved onto making games.
 
 Here are my tips for helping you get code written and progress made. First, sofware is about solving problem, NOT writing code. So even if AI can write
-the code for me, sames me from getting RSI, it'll never be able to perfectly solve the problems for me (just like how Google translate doesn't replace accurate translators and interpreters).
+the code for me, which prevents me from getting RSI, it'll never be able to perfectly solve the problems for me (just like how Google translate doesn't replace accurate translators and interpreters).
 
 ## Clarify the Problem
 
@@ -23,7 +24,8 @@ task impossible. Not the student's fault because he just hadn't clarified what h
 ## Break the problem down into Comments
 
 This is what I call _Comment-Driven Development_. You write comments for your program first, _then_ break those
-comments down into smaller comments until you can turn each line into code individually. This can be [psuedocode]() or just plain English.
+comments down into smaller comments until you can turn each line into code individually. This can be [psuedocode]() or just plain English. I know many already do this as a way to work
+with coding AIs like Copilot and Tabnine.
 
 Here is an example for implementing _Fizzbuzz_ for the first time.
 
@@ -48,7 +50,7 @@ without changing the code.
 
 ```javascript
 // fizzbuzz
-// count from 1 to 30
+// count from 1 to 30 (later from 'start' to 'end')
 // if number is factor of 3
 // print "fizz"
 // if number is factor of 5
@@ -74,6 +76,8 @@ or we'll get "fizz" and "buzz" separately when get to "15"
 ```
 
 ### CDD Interaction #3
+
+Finally, I feel like my comments are concise enough that they can by translated to code
 
 ```javascript
 // fizzbuzz
@@ -146,7 +150,7 @@ then I wouldn't write it this way for clarity.
 I made a lookup table or matrix so we can do "fizz buzz" or "ooga booga" or whatever we want. The `fizzbuzzSetup` function create a unique
 function based on the two number we want to use as factors and their respective / corresponding words.
 
-Using a HOF is nice here because then we don't need to pass matrix around everywhere. Fizzbuzz only cared about the number before and that shouldn't change.
+Using a HOF is nice here because then we don't need to pass matrix around everywhere. Fizzbuzz only cares about the number before and that shouldn't change.
 I'll write it a bit cleaner for those less ternary happy.
 
 ```javascript
@@ -159,12 +163,8 @@ function fizzbuzzSetup(matrix) {
   return function (number) {
     const keys = Object.keys(matrix);
     let result = "";
-    if (number % keys[0] === 0) {
-      result += matrix[keys[0]];
-    }
-    if (number % keys[1] === 0) {
-      result += matrix[keys[1]];
-    }
+    if (number % keys[0] === 0) result += matrix[keys[0]];
+    if (number % keys[1] === 0) result += matrix[keys[1]];
     return result || number;
   };
 }
