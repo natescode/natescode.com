@@ -18,7 +18,7 @@ this problem as naively as possible then again with nothing more than highschool
 
 There are a few different versions of this question. Sometimes it is crystal balls, or eggs or something else.
 
-There is a 100 story building. We have two magic glass orbs. The orbs will only break at or above floor X. We need to find what floor X is, in as few drops as possible. No matter how many times we drop an orb, it will only break at or above floor X. We are give two orbs. What is the fewest drops to find the floor no matter what the floor is?
+There is a 100 story building. We have two magic glass orbs. The orbs will only break at or above floor X. We need to find what floor X is, in as few drops as possible. No matter how many times we drop an orb, it will only break at or above floor X. We are given two orbs. What is the fewest drops to find the floor no matter what the floor is? We are trying to minimize the worst case here.
 
 ## The Worst Case Scenario
 
@@ -32,11 +32,11 @@ If we only had one ball, then we'd just have to start at the bottom floor and wo
 
 ### First thoughts
 
-Most will first think about cutting the floors in half. So let's do that. Give a building with N floor, n=100 here, we start at floor 50 (n/2), if the ball breaks, then we check from 51-100. If the ball doesn't break, then we check 1-49. So we broke the building into 2 sections of size 50. The worst case is 50+2-1=51.
+Most will first think about cutting the floors in half. So let's do that. Give a building with N floor, n=100 here, we start at floor 50 (n/2), if the ball breaks, then we check from 1-49. If the ball doesn't break, then we check 51-100. So we broke the building into 2 sections of size 50. The worst case is 50+2-1=51.
 
 We might realize we could break the building up into differently sized sections.
 
-If we break it into 4 sections of 25 then our worst case is 25+4-1 = 28.
+If we break it into 4 sections of 25 then our worst case is 25+4-1 = 28 (27 if we use inference).
 
 WE can see the pattern and make a formula. sections, S, and section size B. So tries, T make is
 
@@ -45,10 +45,10 @@ $$T=S+B-1$$
 
 So we can manually find a **good** solution
 
-    2,50 = 52
-    4,25 = 29
-    5,20 = 25
-    10,10 = 20
+    2,50 = 51
+    4,25 = 28
+    5,20 = 24
+    10,10 = 19
 
 After 10,10 it just gets worse again. You might even realize since S and B are the same, we could think of that as `sqrt n`. Which is a _good_ answer. Not the _ideal_ answer but a decent one.
 
@@ -58,7 +58,11 @@ $$ \sqrt(n) $$
 
 So for any building size N. We can solve it in
 
-$ \sqrt(n)$ tries. For N=100, that is 20.
+$$ 2 \sqrt(n) - 1$$
+
+tries. For N=100, that is 19 (18 with inference).
+
+If X = 99 then we try 10,20,30,40,50,60,70,80,90,100,91,92,93,94,95,96,97,98.
 
 <!-- But the problem with that is that after jumping 10 floors then we jump 10 more which means we are now at 11 tries. We want to find the equalibrium where no matter which floor the orb breaks on, the number of tries is the same.
 
@@ -88,7 +92,7 @@ If we try floor 10, the orb doesn't break then we jump to floor 20. The problem 
 The ideal solution comes from understanding that as we check the top of each section, we have already dropped for each previous section.
 
 For example, if we jump by 10 each time then at floor 30 we have already jumped 2 times, 10,20. If the ball breaks we still have to check 10 places, 21-30
-which make our total 12, not 10. Ideally that number would be consistent. We would jump by 10 then by 9 because then we'd have a max of 10 jumps. We can try this but 10 doesn't quite work. We end at 55. So we need a bigger number. 55 is the sum of 1 to 10. We could manually find that 14 + 13 + 12 + 11.. is 104 which is enough! But as computer scientists, we should look for the generalized solution.
+which make our total 12, not 10. Ideally that number would be consistent. We need to find an equalibrium. We would jump by 10 then by 9 because then we'd have a max of 10 jumps. We can try this but 10 doesn't quite work. We end at 55. So we need a bigger number. 55 is the sum of 1 to 10. We could manually find that 14 + 13 + 12 + 11.. is 104 which is enough! But as computer scientists, we should look for the generalized solution.
 
 <!-- $$10,19,27,34,40,45,49,52,54,55$$ -->
 
@@ -100,9 +104,19 @@ I've seen this formula on many blog posts that don't explain it clearly for the 
 
 $$ \sum\_{i=1}^n i $$
 
+Which just means _"Add all numbers from 1 to N"_.
+
 With a little thinking we realize that is is going to go down to 1. So really we are adding 1 to N and the sum being 100. We were just defining it in a backwards sense.
 
 So we can figure out the sum off all numbers 1 to n with the following formula that is easy to figure out on your own.
+
+Adding 1 to 10, we can make 10 pairs that add up to 10. There are always $ n \over 2 $ pairs. The middle number doesn't pair up so we add that.
+
+10 + 0 = 10
+9 + 1 = 10
+8 + 2 = 10
+7 + 3 = 10
+6 + 4 = 10
 
 $$ n (n + 1) \over 5 $$
 
