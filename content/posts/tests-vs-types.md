@@ -1,7 +1,7 @@
 ---
 title: "Tests vs Types"
 date: 2023-08-02T08:52:40-05:00
-draft: false
+draft: true
 toc: false
 images:
 tags:
@@ -84,3 +84,9 @@ if (Foo() === Error) {
 
 function bar(temp: Tempdata): bool {}
 ```
+
+### Types instead of Garbage Collection
+
+Rust uses its types system to prevent data races, memory leaks and many other common errors that are often prevented or cleaned up by garbage collectors and runtimes. Types systems CAN prove anything you want them to.
+
+Prolog for example uses types with a SMT solver to actually fill in the blanks and solve programming problems for you!

@@ -1,7 +1,7 @@
 ---
 title: "Tailwind: Debunking the Debunkers"
 date: 2023-08-01T00:00:00-05:00
-draft: false
+draft: true
 toc: false
 images:
 tags:
@@ -22,7 +22,7 @@ I'll give you the TL;DR at the beginning. You're using Tailwind Incorrectly then
 
 Okay. At first, I didn't have a good rebuttal for this. And this is a LOT to personal opinion. I thought JSX was an abomination too at first, I was wrong as usual. You know what I find MORE ugly? A 3 MB CSS file that I have to search through to find a class I need, which is probably mispelt. I cannot remove ANY CSS because I cannot know if it is used or not.
 
-A good remedy is __Make Smaller Components__
+A good remedy is **Make Smaller Components**
 
 > "too many utility classes means YOUR COMPONENTS ARE TOO BIG" '-- NatesCode
 
@@ -73,7 +73,7 @@ or this?
 Which if used with [Atom Design](https://bradfrost.com/blog/post/atomic-web-design/), it would read like this
 
 ```html
-<Title></Title>
+<title></title>
 ```
 
 No CSS in sight!
@@ -166,7 +166,7 @@ I prefer linters / parsers automatically checking and preventing mistake than ha
 Let's look at some code from yet another Medium article claiming Tailwind bloats HTML, spoiler alert ALL CSS IS BAD WHEN YOU DON'T UNDERSTAND CASCADING.
 
 HE'S EITHER LYING and over exaggerating to make his point or genuinely shouldn't be allowed to write CSS for a living. I was able to
-clean up this code by 30%!!! Remember Tailwind is just CSS. So blaming the tool here doesn't matter. 
+clean up this code by 30%!!! Remember Tailwind is just CSS. So blaming the tool here doesn't matter.
 
 PLEASE if you're gonna hate a tool, at least don't make yourself look like an incompetent dev doing it.
 
@@ -178,7 +178,7 @@ VERY few people actually have valid negative points against Tailwind despite PLE
 - DSL still requires a bit of learning.
 - Utility classes don't support 100% of the capabilities of CSS (child selectors are just bad)
 - ANOTHER build step
-- 
+-
 
 ## The Perfect CSS tool
 
@@ -187,10 +187,8 @@ VERY few people actually have valid negative points against Tailwind despite PLE
 - Little to no build step
 - co-location with HTML & JS
 
-
 The only way to do this is native CSS. I think a close second is styled components with some linter plugins, which is my new approach I'm trying.
 
 So PLEASE if you're going to rebuttal, do it from a point of logic and competence. I'm not even using tailwind for this blog nor [Beyond Bootcamp](https://beyondbootcamp.org).
-
 
 Cheers!

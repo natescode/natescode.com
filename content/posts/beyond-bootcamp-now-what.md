@@ -1,5 +1,5 @@
 ---
-title: "Beyond Bootcamp: Now What?"
+title: "Beyond Coding Bootcamp: Now What?"
 date: 2023-03-23T14:54:18-05:00
 draft: true
 toc: false
@@ -42,3 +42,8 @@ Maybe you're just out of highschool and finished the bootcamp. Great!
 ## Switching Careers
 
 ## Getting a Promotion -->
+
+## Want more?
+
+Try [Beyond Code Camp](https://www.beyondcodecamp.org/)! That is my new project / company that is trying to help all novice
+developers succeed at landing their first jobs and get to Senior developer with that sweet $100,000 USD salary working from the beach in their swimsuit!
