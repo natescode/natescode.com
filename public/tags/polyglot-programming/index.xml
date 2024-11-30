@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Polyglot Programming on natescode blog</title>
-    <link>http://localhost:1313/tags/polyglot-programming/</link>
+    <link>https://natescode.com/tags/polyglot-programming/</link>
     <description>Recent content in Polyglot Programming on natescode blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>All Rights Reserved</copyright>
     <lastBuildDate>Thu, 23 Mar 2023 14:54:18 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/polyglot-programming/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://natescode.com/tags/polyglot-programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>&#39;This&#39; That and Dispatch</title>
-      <link>http://localhost:1313/posts/2023/03/this-that-and-dispatch/</link>
+      <link>https://natescode.com/posts/2023/03/this-that-and-dispatch/</link>
       <pubDate>Thu, 23 Mar 2023 14:54:18 -0500</pubDate>
-      <guid>http://localhost:1313/posts/2023/03/this-that-and-dispatch/</guid>
+      <guid>https://natescode.com/posts/2023/03/this-that-and-dispatch/</guid>
       <description>There are numerous blogs and videos about Javascript&amp;rsquo;s this keyword. In my opinion, virtually all of them fall short and fail to even mention dispatch or binding.&#xA;As always, I encourage polyglot programming. So I&amp;rsquo;ll be showing examples is Javascript, C#, Go and Rust.&#xA;Back to the basics First, let us cover some really basic but critical Javascript.&#xA;function greet(name) { console.log(`hello, ${name}`); } function greet() { console.log(`hello, stranger`); } greet(&amp;#34;natescode&amp;#34;); Which function is called?</description>
     </item>
   </channel>

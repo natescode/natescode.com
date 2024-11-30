@@ -2,117 +2,117 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/beyond-code/</loc>
+    <loc>https://natescode.com/tags/beyond-code/</loc>
     <lastmod>2024-11-29T11:39:31-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2024-11-29T11:39:31-06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-11-29T11:39:31-06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/productivity/</loc>
-    <lastmod>2024-11-29T11:39:31-06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/2024/11/productivity-life-hacks-for-software-engineers/</loc>
-    <lastmod>2024-11-29T11:39:31-06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/soft-skills/</loc>
-    <lastmod>2024-11-29T11:39:31-06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://natescode.com/</loc>
     <lastmod>2024-11-29T11:39:31-06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/tags/"
+                href="https://natescode.com/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/"
+                href="https://natescode.com/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tags/career/</loc>
+    <loc>https://natescode.com/posts/</loc>
+    <lastmod>2024-11-29T11:39:31-06:00</lastmod>
+  </url><url>
+    <loc>https://natescode.com/tags/productivity/</loc>
+    <lastmod>2024-11-29T11:39:31-06:00</lastmod>
+  </url><url>
+    <loc>https://natescode.com/posts/2024/11/productivity-life-hacks-for-software-engineers/</loc>
+    <lastmod>2024-11-29T11:39:31-06:00</lastmod>
+  </url><url>
+    <loc>https://natescode.com/tags/soft-skills/</loc>
+    <lastmod>2024-11-29T11:39:31-06:00</lastmod>
+  </url><url>
+    <loc>https://natescode.com/tags/</loc>
+    <lastmod>2024-11-29T11:39:31-06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://natescode.com/fr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://natescode.com/tags/"
+                />
+  </url><url>
+    <loc>https://natescode.com/tags/career/</loc>
     <lastmod>2024-04-02T16:39:58-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/interviews/</loc>
+    <loc>https://natescode.com/tags/interviews/</loc>
     <lastmod>2024-04-02T16:39:58-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2024/04/software-interviews-explained/</loc>
+    <loc>https://natescode.com/posts/2024/04/software-interviews-explained/</loc>
     <lastmod>2024-04-02T16:39:58-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2023/12/dangers-of-functional-programming/</loc>
+    <loc>https://natescode.com/posts/2023/12/dangers-of-functional-programming/</loc>
     <lastmod>2023-12-06T15:33:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/functional-programming/</loc>
+    <loc>https://natescode.com/tags/functional-programming/</loc>
     <lastmod>2023-12-06T15:33:15-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/softskills/</loc>
+    <loc>https://natescode.com/tags/softskills/</loc>
     <lastmod>2023-09-23T21:56:58-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2023/09/typing-speed-matters-for-software-developers/</loc>
+    <loc>https://natescode.com/posts/2023/09/typing-speed-matters-for-software-developers/</loc>
     <lastmod>2023-09-23T21:56:58-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2023/08/tailwind-debunking-the-debunkers/</loc>
+    <loc>https://natescode.com/posts/2023/08/tailwind-debunking-the-debunkers/</loc>
     <lastmod>2023-08-01T00:00:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/untagged/</loc>
+    <loc>https://natescode.com/tags/untagged/</loc>
     <lastmod>2023-08-01T00:00:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/algorithms/</loc>
+    <loc>https://natescode.com/tags/algorithms/</loc>
     <lastmod>2023-03-29T02:12:10-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/dsa/</loc>
+    <loc>https://natescode.com/tags/dsa/</loc>
     <lastmod>2023-03-29T02:12:10-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/faang/</loc>
+    <loc>https://natescode.com/tags/faang/</loc>
     <lastmod>2023-03-29T02:12:10-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2023/03/two-crystal-balls-problem/</loc>
+    <loc>https://natescode.com/posts/2023/03/two-crystal-balls-problem/</loc>
     <lastmod>2023-03-29T02:12:10-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2023/03/this-that-and-dispatch/</loc>
+    <loc>https://natescode.com/posts/2023/03/this-that-and-dispatch/</loc>
     <lastmod>2023-03-23T14:54:18-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/concepts/</loc>
+    <loc>https://natescode.com/tags/concepts/</loc>
     <lastmod>2023-03-23T14:54:18-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/polyglot-programming/</loc>
+    <loc>https://natescode.com/tags/polyglot-programming/</loc>
     <lastmod>2023-03-23T14:54:18-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://natescode.com/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/categories/"
+                href="https://natescode.com/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/categories/"
+                href="https://natescode.com/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/series/</loc>
+    <loc>https://natescode.com/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/series/"
+                href="https://natescode.com/fr/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/series/"
+                href="https://natescode.com/series/"
                 />
   </url>
 </urlset>

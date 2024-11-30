@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Career on natescode blog</title>
-    <link>http://localhost:1313/tags/career/</link>
+    <link>https://natescode.com/tags/career/</link>
     <description>Recent content in Career on natescode blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>All Rights Reserved</copyright>
     <lastBuildDate>Tue, 02 Apr 2024 16:39:58 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/career/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://natescode.com/tags/career/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Software Interviews Explained</title>
-      <link>http://localhost:1313/posts/2024/04/software-interviews-explained/</link>
+      <link>https://natescode.com/posts/2024/04/software-interviews-explained/</link>
       <pubDate>Tue, 02 Apr 2024 16:39:58 -0500</pubDate>
-      <guid>http://localhost:1313/posts/2024/04/software-interviews-explained/</guid>
+      <guid>https://natescode.com/posts/2024/04/software-interviews-explained/</guid>
       <description>Practical Software Interviews A medium article about Google interviews sparked an interesting debate about technical interview methods and questions. I realized that the vast majority of developers have never been the interviewer. Many developers may misunderstand the goals of a technical interview and the vantage point of the technical interviewer. Furthermore, influencers make Leetcode style interviews seem like they&amp;rsquo;re common outside of FAANG; they&amp;rsquo;re not. Here I&amp;rsquo;ll go over how typical software engineer interviews are run as well as debunking some common myths about software interviews.</description>
     </item>
   </channel>

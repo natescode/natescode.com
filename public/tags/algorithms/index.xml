@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Algorithms on natescode blog</title>
-    <link>http://localhost:1313/tags/algorithms/</link>
+    <link>https://natescode.com/tags/algorithms/</link>
     <description>Recent content in Algorithms on natescode blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>All Rights Reserved</copyright>
     <lastBuildDate>Wed, 29 Mar 2023 02:12:10 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/algorithms/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://natescode.com/tags/algorithms/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Two Crystal Balls Problem</title>
-      <link>http://localhost:1313/posts/2023/03/two-crystal-balls-problem/</link>
+      <link>https://natescode.com/posts/2023/03/two-crystal-balls-problem/</link>
       <pubDate>Wed, 29 Mar 2023 02:12:10 -0500</pubDate>
-      <guid>http://localhost:1313/posts/2023/03/two-crystal-balls-problem/</guid>
+      <guid>https://natescode.com/posts/2023/03/two-crystal-balls-problem/</guid>
       <description>This is a famous software engineering interview question from Google. I thought I&amp;rsquo;d provide my explanation that is borderline pedantic. Let&amp;rsquo;s solve this problem as naively as possible then again with nothing more than highschool maths.&#xA;The Problem There are a few different versions of this question. Sometimes it is crystal balls, or eggs or something else.&#xA;There is a 100 story building. We have two magic glass orbs. The orbs will only break at or above floor X.</description>
     </item>
   </channel>

@@ -2,60 +2,60 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>natescode blog</title>
-    <link>http://localhost:1313/</link>
+    <link>https://natescode.com/</link>
     <description>Recent content on natescode blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>All Rights Reserved</copyright>
     <lastBuildDate>Fri, 29 Nov 2024 11:39:31 -0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://natescode.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Productivity Life Hacks for Software Engineers</title>
-      <link>http://localhost:1313/posts/2024/11/productivity-life-hacks-for-software-engineers/</link>
+      <link>https://natescode.com/posts/2024/11/productivity-life-hacks-for-software-engineers/</link>
       <pubDate>Fri, 29 Nov 2024 11:39:31 -0600</pubDate>
-      <guid>http://localhost:1313/posts/2024/11/productivity-life-hacks-for-software-engineers/</guid>
+      <guid>https://natescode.com/posts/2024/11/productivity-life-hacks-for-software-engineers/</guid>
       <description>My co-worker, Abdullahi, encouraged me to write this post. Since I&amp;rsquo;m on Thanskgiving vacation, I thought why not? Plus, writting this post proves him correct; I&amp;rsquo;m very productive.&#xA;I generally don&amp;rsquo;t think of myself as very productive. I was diagnosed with ADHD. I&amp;rsquo;ve always tried to take on too many projects, jobs and challenges; failing multiple responsibilities simultaneously.&#xA;I work 2 jobs, sometimes 3, I am a father of twin girls that are in school plus I make time to work on NatesCode blog posts, videos, exercise and be a son, boyfriend and play DnD.</description>
     </item>
     <item>
       <title>Software Interviews Explained</title>
-      <link>http://localhost:1313/posts/2024/04/software-interviews-explained/</link>
+      <link>https://natescode.com/posts/2024/04/software-interviews-explained/</link>
       <pubDate>Tue, 02 Apr 2024 16:39:58 -0500</pubDate>
-      <guid>http://localhost:1313/posts/2024/04/software-interviews-explained/</guid>
+      <guid>https://natescode.com/posts/2024/04/software-interviews-explained/</guid>
       <description>Practical Software Interviews A medium article about Google interviews sparked an interesting debate about technical interview methods and questions. I realized that the vast majority of developers have never been the interviewer. Many developers may misunderstand the goals of a technical interview and the vantage point of the technical interviewer. Furthermore, influencers make Leetcode style interviews seem like they&amp;rsquo;re common outside of FAANG; they&amp;rsquo;re not. Here I&amp;rsquo;ll go over how typical software engineer interviews are run as well as debunking some common myths about software interviews.</description>
     </item>
     <item>
       <title>Dangers of Functional Programming</title>
-      <link>http://localhost:1313/posts/2023/12/dangers-of-functional-programming/</link>
+      <link>https://natescode.com/posts/2023/12/dangers-of-functional-programming/</link>
       <pubDate>Wed, 06 Dec 2023 15:33:15 -0600</pubDate>
-      <guid>http://localhost:1313/posts/2023/12/dangers-of-functional-programming/</guid>
+      <guid>https://natescode.com/posts/2023/12/dangers-of-functional-programming/</guid>
       <description>Functional Programming has grown in popularity the last few years. Unfortunately, that also means it has become a bit of a buzzword. Some may call themselves &amp;ldquo;FP nerds&amp;rdquo; while only superficially emulating functional programming.&#xA;Sometimes mimicking functional techniques, especially in a non-functional language, I&amp;rsquo;m looking at you ES2024, is bit inefficient or dangerous. Let&amp;rsquo;s cover some dangers of blindly using FP techniques without understand how they work instead of blindly following some self-proclaimed FP guru (typical FAANG to influencer) told you FP is a panacea.</description>
     </item>
     <item>
       <title>Typing Speed Matters for Software Developers</title>
-      <link>http://localhost:1313/posts/2023/09/typing-speed-matters-for-software-developers/</link>
+      <link>https://natescode.com/posts/2023/09/typing-speed-matters-for-software-developers/</link>
       <pubDate>Sat, 23 Sep 2023 21:56:58 -0400</pubDate>
-      <guid>http://localhost:1313/posts/2023/09/typing-speed-matters-for-software-developers/</guid>
+      <guid>https://natescode.com/posts/2023/09/typing-speed-matters-for-software-developers/</guid>
       <description>Typing efficiency and speed is an often underrated and underappreciated skill for new and novice developers. I teach a coding bootcamp. I see adults of all ages, talents, backgrounds and walks of life start their journey into software development.&#xA;One issue, of many, I have with coding bootcamps is that they say there are no prerequisits when there definitely are. I&amp;rsquo;ve seen students start bootcamp with a brand-new laptop, likely their first, log onto the Zoom class all bright eyed with ethusiam and wonder.</description>
     </item>
     <item>
       <title>Tailwind: Debunking the Debunkers</title>
-      <link>http://localhost:1313/posts/2023/08/tailwind-debunking-the-debunkers/</link>
+      <link>https://natescode.com/posts/2023/08/tailwind-debunking-the-debunkers/</link>
       <pubDate>Tue, 01 Aug 2023 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/posts/2023/08/tailwind-debunking-the-debunkers/</guid>
+      <guid>https://natescode.com/posts/2023/08/tailwind-debunking-the-debunkers/</guid>
       <description>I&amp;rsquo;ve seen a TON of hate for Tailwind. While I don&amp;rsquo;t care much about which technologies other developers use, I do care when developers spread lies because they are religiously for or against a particular technology. I&amp;rsquo;m not much of a technology fan-boy; I use what works for the given requirements. Don&amp;rsquo;t get me wrong, I still have plenty of strong opinions but they&amp;rsquo;re more about general techniques, attitudes etc and not about specific libraries or technologies.</description>
     </item>
     <item>
       <title>Two Crystal Balls Problem</title>
-      <link>http://localhost:1313/posts/2023/03/two-crystal-balls-problem/</link>
+      <link>https://natescode.com/posts/2023/03/two-crystal-balls-problem/</link>
       <pubDate>Wed, 29 Mar 2023 02:12:10 -0500</pubDate>
-      <guid>http://localhost:1313/posts/2023/03/two-crystal-balls-problem/</guid>
+      <guid>https://natescode.com/posts/2023/03/two-crystal-balls-problem/</guid>
       <description>This is a famous software engineering interview question from Google. I thought I&amp;rsquo;d provide my explanation that is borderline pedantic. Let&amp;rsquo;s solve this problem as naively as possible then again with nothing more than highschool maths.&#xA;The Problem There are a few different versions of this question. Sometimes it is crystal balls, or eggs or something else.&#xA;There is a 100 story building. We have two magic glass orbs. The orbs will only break at or above floor X.</description>
     </item>
     <item>
       <title>&#39;This&#39; That and Dispatch</title>
-      <link>http://localhost:1313/posts/2023/03/this-that-and-dispatch/</link>
+      <link>https://natescode.com/posts/2023/03/this-that-and-dispatch/</link>
       <pubDate>Thu, 23 Mar 2023 14:54:18 -0500</pubDate>
-      <guid>http://localhost:1313/posts/2023/03/this-that-and-dispatch/</guid>
+      <guid>https://natescode.com/posts/2023/03/this-that-and-dispatch/</guid>
       <description>There are numerous blogs and videos about Javascript&amp;rsquo;s this keyword. In my opinion, virtually all of them fall short and fail to even mention dispatch or binding.&#xA;As always, I encourage polyglot programming. So I&amp;rsquo;ll be showing examples is Javascript, C#, Go and Rust.&#xA;Back to the basics First, let us cover some really basic but critical Javascript.&#xA;function greet(name) { console.log(`hello, ${name}`); } function greet() { console.log(`hello, stranger`); } greet(&amp;#34;natescode&amp;#34;); Which function is called?</description>
     </item>
   </channel>
