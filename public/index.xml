@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hello Friend NG</title>
+    <link>//localhost:1313/</link>
+    <description>Recent content on Hello Friend NG</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Fri, 29 Nov 2024 12:36:46 -0600</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aaa</title>
+      <link>//localhost:1313/posts/aaa/</link>
+      <pubDate>Fri, 29 Nov 2024 12:36:46 -0600</pubDate>
+      <guid>//localhost:1313/posts/aaa/</guid>
+      <description>Testing !</description>
+    </item>
+    <item>
+      <title>Productivity Life Hacks for Sofware Engineers</title>
+      <link>//localhost:1313/posts/productivity-hacks/</link>
+      <pubDate>Fri, 29 Nov 2024 11:39:31 -0600</pubDate>
+      <guid>//localhost:1313/posts/productivity-hacks/</guid>
+      <description>Productivity Life Hacks for Sofware Engineers.&#xA;My co-worker, Abdullahi, encouraged me to write this post. Since I&amp;rsquo;m on Thanskgiving vacation, I thought why not? Plus, writting this post proves him correct; I&amp;rsquo;m very productive.&#xA;I generally don&amp;rsquo;t think of myself as very productive. I was diagnosed with ADHD, like my father, and I&amp;rsquo;ve always tried to take on too many projects, jobs and challenges at once.&#xA;I work 2 jobs, sometimes 3, I am a father of twin girls that are in school plus I make time to work on NatesCode blog posts, videos, exercise and be a son, boyfriend and play DnD.</description>
+    </item>
+    <item>
+      <title>Pair Programming</title>
+      <link>//localhost:1313/posts/pair-programming/</link>
+      <pubDate>Sat, 19 Oct 2024 21:22:59 -0500</pubDate>
+      <guid>//localhost:1313/posts/pair-programming/</guid>
+      <description>Pair Programming is a part of of XP programming which seemed to be pushed mostly in the early 2000&amp;rsquo;s. I have heard that it can work, of course it sounds like a huge waste of time most of the time.&#xA;Pair Programming Defined I think we need to define it. Some XP evangelists say that one person coding and another watching is NOT pair programming. Ok, then what it?&#xA;There are tools for IDEs / editors for developers to code on the same code at the same time.</description>
+    </item>
+    <item>
+      <title>Wordle Interview Challenge</title>
+      <link>//localhost:1313/posts/wordle-interview-challenge/</link>
+      <pubDate>Fri, 04 Oct 2024 21:54:34 -0500</pubDate>
+      <guid>//localhost:1313/posts/wordle-interview-challenge/</guid>
+      <description>I like Wordle, currently I have a 117 day streak on hard mode.&#xA;Here is what I think is a really good interview question concerning Wordle.</description>
+    </item>
+    <item>
+      <title>More TDD Less PRs</title>
+      <link>//localhost:1313/posts/more-tests-less-pull-requests/</link>
+      <pubDate>Sat, 13 Jul 2024 07:37:52 -0500</pubDate>
+      <guid>//localhost:1313/posts/more-tests-less-pull-requests/</guid>
+      <description>I wanted a fancy title that wasn&amp;rsquo;t clickbaity. I&amp;rsquo;ve been experimenting with a coding approach at work that I want to share. At work, like any good company we write tests for our code. Not always first, but at least we generally have quality tests. The IT Director has pushed hard for code coverage which I strongly disagree with. One engineer spend 2 full days writing tests in order to commit 17 lines of code because the code coverage percentage fell, oh no we ONLY had 95% code coverage.</description>
+    </item>
+    <item>
+      <title>Optimize Code by Doing Less</title>
+      <link>//localhost:1313/posts/null-is-innocent/</link>
+      <pubDate>Sat, 13 Jul 2024 01:55:29 -0500</pubDate>
+      <guid>//localhost:1313/posts/null-is-innocent/</guid>
+      <description>Null is innocent, blame the type system! So for a long time I was confused about null. I kept hearing null is bad but then seeing the answer being Optional&amp;lt;T&amp;gt; and Some x or None. I was like okay so null is bad but None is okay? Couldn&amp;rsquo;t we just call None null ?&#xA;The answer is that null isn&amp;rsquo;t the problem, the type system is! Here is an example in C#.</description>
+    </item>
+    <item>
+      <title>Optimize Code by Doing Less</title>
+      <link>//localhost:1313/posts/optimize-code-by-doing-less/</link>
+      <pubDate>Sat, 13 Jul 2024 01:29:33 -0500</pubDate>
+      <guid>//localhost:1313/posts/optimize-code-by-doing-less/</guid>
+      <description>Anytime code needs to be optimized for performance, be that performance in time or memory usage, we can simply say &amp;ldquo;well just do less&amp;rdquo;. I always think &amp;ldquo;do less&amp;rdquo; when I&amp;rsquo;m optimizing code. Here are my thoughts of what exactly &amp;ldquo;do less&amp;rdquo; means by answering &amp;ldquo;Do less of what?&amp;rdquo;.&#xA;&amp;ldquo;Do less of what?&amp;rdquo; &amp;ndash; ME at 01:00 AM&#xA;Do Less: Less Algorithmic Complexity The most intuitive change is to create an algorithm that performance fewer steps.</description>
+    </item>
+    <item>
+      <title>Dry Brittle Code</title>
+      <link>//localhost:1313/posts/dry-brittle-code/</link>
+      <pubDate>Fri, 28 Jun 2024 10:24:34 -0600</pubDate>
+      <guid>//localhost:1313/posts/dry-brittle-code/</guid>
+      <description>Software Engineer students will hear &amp;ldquo;DRY&amp;rdquo; or Don&amp;rsquo;t Repeat Yourself numerous times as they are learning to design, build and test software. Even professionals will argue over removing duplicate code. Unfortunately, making code DRY isn&amp;rsquo;t as cut-and-dry (pun intended).&#xA;Here is a really simple example of DRY and brittle code. Say we have some CSS like below.&#xA;```css .service-card { font-family: monospace; background-color: #18B218; width: 320px; height: 200px; } .product-card{ font-family: monospace; background-color: #18B218; width: 320px; height: 200px; } ``` Just because there are duplicate values does not mean there are duplicate semantics.</description>
+    </item>
+    <item>
+      <title>What to Know Before Coding Bootcamp</title>
+      <link>//localhost:1313/posts/what-to-know-before-coding-bootcamp/</link>
+      <pubDate>Fri, 21 Jun 2024 15:11:13 -0500</pubDate>
+      <guid>//localhost:1313/posts/what-to-know-before-coding-bootcamp/</guid>
+      <description>I am a lead software engineer by day and a coding bootcamp instructor by night. Here are some prerequisites skills to know before attending a coding bootcamp.&#xA;Basic Computer Skills I see many students that don&amp;rsquo;t know what a ZIP file is or how to unzip it.&#xA;Basic computer shortcuts like copy (CTRL + C) and paste (CTRL + V).&#xA;Understanding how you files are structured i.e. you user folder aka home is C:/users/your_name on Windows.</description>
+    </item>
+    <item>
+      <title>Separation of Concerns Not Code</title>
+      <link>//localhost:1313/posts/separation-of-concerns-not-code/</link>
+      <pubDate>Thu, 30 May 2024 10:46:44 -0500</pubDate>
+      <guid>//localhost:1313/posts/separation-of-concerns-not-code/</guid>
+      <description>I was going to name this post &amp;ldquo;Concerns vs Responsibilities&amp;rdquo; which I&amp;rsquo;ll be covering here anyways.&#xA;S.O.L.I.D starts with S for &amp;ldquo;Single-Responibliity Principle&amp;rdquo;, making sure code: function, object etc. do one thing well. We also have the concept of &amp;ldquo;Separation of Concerns&amp;rdquo;. I think Responsilibities and Concerns get conflated and the definitions get confused. The follow is completely my opinion based on my experience and not anything canon or &amp;ldquo;official&amp;rdquo;.</description>
+    </item>
+    <item>
+      <title>Practical Principles of Programming Paradigms</title>
+      <link>//localhost:1313/posts/programming-paradigms/</link>
+      <pubDate>Mon, 13 May 2024 23:45:53 -0500</pubDate>
+      <guid>//localhost:1313/posts/programming-paradigms/</guid>
+      <description>Ultimately, all software paradigms are made of serveral different applications of code augmentation strategies.&#xA;I wasn&amp;rsquo;t sure what to call this post. I was thinking about how to categorize the different ways software developers add new code to existing code, augmentation. These tie in closely with software paradigms but they are not paradigms in and of themselves.&#xA;I will go over three methods of code augmentation.&#xA;Encapsulation (Composition) High Order Functions (or components) Decorators (Decorator pattern and language features aka attributes) Dependency Injection Middleware / hooks / frameworks Encapsulation is all about wrapping existing code with new code.</description>
+    </item>
+    <item>
+      <title>Dev Lead Day in the Life</title>
+      <link>//localhost:1313/posts/dev-lead-day-in-the-life/</link>
+      <pubDate>Sat, 04 May 2024 18:08:26 -0700</pubDate>
+      <guid>//localhost:1313/posts/dev-lead-day-in-the-life/</guid>
+      <description>Software</description>
+    </item>
+    <item>
+      <title>Economics of Software</title>
+      <link>//localhost:1313/posts/economics-of-software/</link>
+      <pubDate>Sat, 04 May 2024 14:28:34 -0700</pubDate>
+      <guid>//localhost:1313/posts/economics-of-software/</guid>
+      <description>Software development only exists because software can provide value to businesses and customers. I think many software developers, especially juniors and aspirining developers forget this. Yes, DSA have value and architecture has value. But at the end of the day if you aren&amp;rsquo;t shipping code that provideds business value, your fancy purely functional, well architectued code doesn&amp;rsquo;t matter.&#xA;YouTubers make it sound like all software engineers do is Leetcode in their interviews and solving complex problems by thinking all day.</description>
+    </item>
+    <item>
+      <title>Pillars of Software Engineering</title>
+      <link>//localhost:1313/posts/pillars-of-software-engineering/</link>
+      <pubDate>Sun, 28 Apr 2024 10:59:55 -0500</pubDate>
+      <guid>//localhost:1313/posts/pillars-of-software-engineering/</guid>
+      <description>Interfaces, Protocols, Specifications and Standards There are four pillars of SWE abstractions: Interfaces, Protocols, Specifications and Standards. These four pillars encompass all of software. Everything becomes clearer, once these terms and concepts are deeply understood.&#xA;Interfaces &amp;ldquo;The point of communication between two systems&amp;rdquo;&#xA;A traffic light is an interface. It is the point of communication between the driver and the intersection&#xA;The traffic light has a very simple interface. Let&amp;rsquo;s define it in code.</description>
+    </item>
+    <item>
+      <title>Software Symptoms vs Problems</title>
+      <link>//localhost:1313/posts/software-symptoms-vs-problems/</link>
+      <pubDate>Thu, 18 Apr 2024 00:22:13 -0500</pubDate>
+      <guid>//localhost:1313/posts/software-symptoms-vs-problems/</guid>
+      <description>Symptoms vs Problems is something I&amp;rsquo;ve run into a lot lately. For example, our production support team has received multiple tickets about a specific screen, let&amp;rsquo;s call it QuickEdit, that allows the users to quickly edit some data. On save, the request will often timeout.&#xA;According to the business, they ask if we can just quickly fix this page. Maybe not allow multi-editing. The issue isn&amp;rsquo;t on the UI, that&amp;rsquo;s just where we see the symptom.</description>
+    </item>
+    <item>
+      <title>Soft Skills for Software Engineers</title>
+      <link>//localhost:1313/posts/soft-skills-for-software-engineers/</link>
+      <pubDate>Wed, 10 Apr 2024 20:34:43 -0500</pubDate>
+      <guid>//localhost:1313/posts/soft-skills-for-software-engineers/</guid>
+      <description>Computer Science students, bootcampers etc. Often think a career in software is solely defined by their hard technical skills. In fact, they may think that in order to get promoted they have to demonstrate only technical skills.&#xA;I&amp;rsquo;m going to cover five soft-skill concepts developers need to understand.&#xA;Understanding Agile People Skills </description>
+    </item>
+    <item>
+      <title>Software Interviews Explained</title>
+      <link>//localhost:1313/posts/software-interviews-101/</link>
+      <pubDate>Tue, 02 Apr 2024 16:39:58 -0500</pubDate>
+      <guid>//localhost:1313/posts/software-interviews-101/</guid>
+      <description>Practical Software Interviews A medium article about Google interviews sparked an interesting debate about technical interview methods and questions. I realized that the vast majority of developers have never been the interviewer. Many developers may misunderstand the goals of a technical interview and the vantage point of the technical interviewer. Furthermore, influencers make Leetcode style interviews seem like they&amp;rsquo;re common outside of FAANG; they&amp;rsquo;re not. Here I&amp;rsquo;ll go over how typical software engineer interviews are run as well as debunking some common myths about software interviews.</description>
+    </item>
+    <item>
+      <title>Premature Optimization</title>
+      <link>//localhost:1313/posts/premature-optimization/</link>
+      <pubDate>Sun, 24 Mar 2024 14:00:30 -0500</pubDate>
+      <guid>//localhost:1313/posts/premature-optimization/</guid>
+      <description>What is &amp;ldquo;premature optimization&amp;rdquo;? We often hear developers argue against it quoting Donald Knuth&amp;rsquo;s from The Art of Computer Programming:&#xA;“The real problem is that programmers have spent far too much time worrying about efficiency in the wrong places and at the wrong times; premature optimization is the root of all evil (or at least most of it) in programming.”&#xA;So what is premature optimization? Optimization is NOT bad. So when is the correct time or context to optimize code?</description>
+    </item>
+    <item>
+      <title>Exposing Coding Bootcamp From an Instructor</title>
+      <link>//localhost:1313/posts/exposing-coding-bootcamp-from-an-instructor/</link>
+      <pubDate>Wed, 06 Dec 2023 16:00:42 -0600</pubDate>
+      <guid>//localhost:1313/posts/exposing-coding-bootcamp-from-an-instructor/</guid>
+      <description>Are coding bootcamps a scam? Are they worth is in 2024?&#xA;I have been a bootcamp instructor for a local coding bootcamp that runs through my local university since 2021. I&amp;rsquo;m currently teaching my 6th bootcamp cohort.&#xA;First, let&amp;rsquo;s define which sub-topics&#xA;Advertising Price Refunds Curriculum Staff Instructors TAs Tutors Graders Career Services Conclusion </description>
+    </item>
+    <item>
+      <title>Dangers of Functional Programming</title>
+      <link>//localhost:1313/posts/dangers-of-functional-programming/</link>
+      <pubDate>Wed, 06 Dec 2023 15:33:15 -0600</pubDate>
+      <guid>//localhost:1313/posts/dangers-of-functional-programming/</guid>
+      <description>Functional Programming has grown in popularity the last few years. Unfortunately, that also means it has become a bit of a buzzword. Some may call themselves &amp;ldquo;FP nerds&amp;rdquo; while only superficially emulating functional programming.&#xA;Sometimes mimicking functional techniques, especially in a non-functional language, I&amp;rsquo;m looking at you ES2024, is bit inefficient or dangerous. Let&amp;rsquo;s cover some dangers of blindly using FP techniques without understand how they work instead of blindly following some self-proclaimed FP guru (typical FAANG to influencer) told you FP is a panacea.</description>
+    </item>
+    <item>
+      <title>OOP vs FP</title>
+      <link>//localhost:1313/posts/oop-vs-fp/</link>
+      <pubDate>Sat, 02 Dec 2023 14:35:19 -0500</pubDate>
+      <guid>//localhost:1313/posts/oop-vs-fp/</guid>
+      <description>There has been numerous reactions to the reactions to the reactions of a certain Tech Influencer, who works at Netflix BTW, reacting to a Continuous Deliver video about OOP vs FP.&#xA;FP Functions are the main abstraction Functions are pure a) referential transparency: same output for a given input b) no side-effects: no mutation, no outside state (no IO) First, let&amp;rsquo;s actually define OOP and FP. FP is the easiest to define because it is based on lambda calculus.</description>
+    </item>
+    <item>
+      <title>Theory vs Practice in Software</title>
+      <link>//localhost:1313/posts/theory-vs-practice/</link>
+      <pubDate>Fri, 24 Nov 2023 20:49:30 -0500</pubDate>
+      <guid>//localhost:1313/posts/theory-vs-practice/</guid>
+      <description>I notice that when I have discourse with other developers online that there is a disconnect. Most developers, about 58%, have less than 10 years of experience. This means that more often than not, I have more experience than the developer I am debating with. Experience doesn&amp;rsquo;t make me correct of course, I&amp;rsquo;m a mediocre developer at best. However, having more experience means that I&amp;rsquo;ve seen &amp;ldquo;TDD&amp;rdquo;, &amp;ldquo;Agile&amp;rdquo;, &amp;ldquo;ORMs&amp;rdquo; and many other technologies, methodogies both succeed and fail in real-world use.</description>
+    </item>
+    <item>
+      <title>Silicon Part 2</title>
+      <link>//localhost:1313/posts/silicon/si-2/</link>
+      <pubDate>Sat, 04 Nov 2023 21:56:31 -0500</pubDate>
+      <guid>//localhost:1313/posts/silicon/si-2/</guid>
+      <description>In my previous Silicon post, I mentioned Ohm.js, which is the PEG-based parser generator that I&amp;rsquo;m using.&#xA;OHM has several advantages.&#xA;Allows left recursion rules to be defined Better and more accurate error handling (because of left-recursion fix) PEG grammar support Semantic rules: allows for linters, formatters etc to easily be made from same grammar Editor to check grammar against a list of test cases Learning my Parser Generator This has been a blast this week learing OHM.</description>
+    </item>
+    <item>
+      <title>Silicon Part 4</title>
+      <link>//localhost:1313/posts/silicon/si-4/</link>
+      <pubDate>Sat, 04 Nov 2023 21:56:31 -0500</pubDate>
+      <guid>//localhost:1313/posts/silicon/si-4/</guid>
+      <description>Hey interwebs! So Silicon and Sigil have come a long way this month. I have most of the grammar finalize and Silicon is already compiling to Javascript with support for a dozen Web APIs and Node APIs.&#xA;I&amp;rsquo;m started getting WASM code gen working as well!</description>
+    </item>
+    <item>
+      <title>Typing Speed Matters for Software Developers</title>
+      <link>//localhost:1313/posts/typing-speed-matters-for-software-developers/</link>
+      <pubDate>Sat, 23 Sep 2023 21:56:58 -0400</pubDate>
+      <guid>//localhost:1313/posts/typing-speed-matters-for-software-developers/</guid>
+      <description>Typing efficiency and speed is an often underrated and underappreciated skill for new and novice developers. I teach a coding bootcamp. I see adults of all ages, talents, backgrounds and walks of life start their journey into software development.&#xA;One issue, of many, I have with coding bootcamps is that they say there are no prerequisits when there definitely are. I&amp;rsquo;ve seen students start bootcamp with a brand-new laptop, likely their first, log onto the Zoom class all bright eyed with ethusiam and wonder.</description>
+    </item>
+    <item>
+      <title>Microservices: Death by a Thousand Papercuts</title>
+      <link>//localhost:1313/posts/microservices-death-by-a-thousand-papercuts/</link>
+      <pubDate>Mon, 04 Sep 2023 14:21:35 -0500</pubDate>
+      <guid>//localhost:1313/posts/microservices-death-by-a-thousand-papercuts/</guid>
+      <description>Microservices is another hot buzzword in tech right now. I&amp;rsquo;m not hear to talk bad about microservices; I&amp;rsquo;m no expert. I have had some experience though.&#xA;Best Buy I couldn&amp;rsquo;t get the payment information. Completely separate services and database. So I didn&amp;rsquo;t do the task. The fact my manager was mad says a lot. Did he NOT look at the user story? That is a really easy thing to catch. Backroom does not have any pricing information.</description>
+    </item>
+    <item>
+      <title>The Last Monad Tutorial</title>
+      <link>//localhost:1313/posts/monad/last-monad-tutorial/</link>
+      <pubDate>Tue, 08 Aug 2023 11:49:16 -0500</pubDate>
+      <guid>//localhost:1313/posts/monad/last-monad-tutorial/</guid>
+      <description>Monad Definition:&#xA;Monad is a monoid in the category of endofunctors&#xA;That&amp;rsquo;s it!&#xA;Just kidding.&#xA;Monad is a container type that has some associated methods&#xA;interface monad&amp;lt;T&amp;gt; { wrap(T): Monad&amp;lt;T&amp;gt;; unwrap&amp;lt;T&amp;gt;(): T; map(monad: monad&amp;lt;T&amp;gt;): monad&amp;lt;T&amp;gt;; flatmap(monad: monad&amp;lt;T&amp;gt;, fn): monad&amp;lt;T&amp;gt;; } The simplist monad is an array.&#xA;[1]; We can unwrap the array and get the containing values.&#xA;function unwrap(array:[]any):any { return array[0] } we can wrap a value into an array</description>
+    </item>
+    <item>
+      <title>Referential Transparency</title>
+      <link>//localhost:1313/posts/referential-transparency/</link>
+      <pubDate>Thu, 03 Aug 2023 07:07:19 -0500</pubDate>
+      <guid>//localhost:1313/posts/referential-transparency/</guid>
+      <description>Referential Transparency is a confusing term. It is a really simple concept, I promise.&#xA;Referential Transparency is a fancy term for the substitution property of equality. Meaning = really means those two things are equal and interchangeable.&#xA;Let&amp;rsquo;s see as simple example.&#xA;const a = 1; a + a === 1 + 1; // true If a = 1 then we can replace all instances of a with 1 and everything works the same.</description>
+    </item>
+    <item>
+      <title>Tests vs Types</title>
+      <link>//localhost:1313/posts/tests-vs-types/</link>
+      <pubDate>Wed, 02 Aug 2023 08:52:40 -0500</pubDate>
+      <guid>//localhost:1313/posts/tests-vs-types/</guid>
+      <description>&amp;ldquo;We don&amp;rsquo;t need complex, stupid, cumbersome types and compilation to prevent bugs in production, types can&amp;rsquo;t prevent all bugs anyways. Just write more tests!&amp;rdquo; &amp;ndash; Tess&#xA;&amp;ldquo;Yes we do! We wouldn&amp;rsquo;t need to write so many complex mocks for tests that take forever to run in our CI / CD pipeline if we used a REAL language that is statically typed. &amp;quot; &amp;ndash; Tyler&#xA;As you can see from the conversation, or argument above, Tess prefers Tests and Tyler prefers types; who is correct?</description>
+    </item>
+    <item>
+      <title>Tailwind: Debunking the Debunkers</title>
+      <link>//localhost:1313/posts/tailwind-debunking-the-debunkers/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 -0500</pubDate>
+      <guid>//localhost:1313/posts/tailwind-debunking-the-debunkers/</guid>
+      <description>I&amp;rsquo;ve seen a TON of hate for Tailwind. While I don&amp;rsquo;t care much about which technologies other developers use, I do care when developers spread lies because they are religiously for or against a particular technology. I&amp;rsquo;m not much of a technology fan-boy; I use what works for the given requirements. Don&amp;rsquo;t get me wrong, I still have plenty of strong opinions but they&amp;rsquo;re more about general techniques, attitudes etc and not about specific libraries or technologies.</description>
+    </item>
+    <item>
+      <title>Software Softskills</title>
+      <link>//localhost:1313/posts/software-softskills/</link>
+      <pubDate>Sun, 09 Jul 2023 17:50:45 -0500</pubDate>
+      <guid>//localhost:1313/posts/software-softskills/</guid>
+      <description>Software despite the stereotypes, does require soft skills. Software products have millions of lines of code. One developer cannot possibly write that themselves. Collaboration is necessary. I&amp;rsquo;ve never been afraid to present or voice my opinion.&#xA;This is a fitting post because I recently landed my first lead / architect position where I&amp;rsquo;ll be spending 70% of my time with people and 30% with code. The first time in 10 years that I won&amp;rsquo;t be slinging code 40 hours per week.</description>
+    </item>
+    <item>
+      <title>Silicon Part 1</title>
+      <link>//localhost:1313/posts/silicon/si-1/</link>
+      <pubDate>Wed, 21 Jun 2023 15:36:46 -0700</pubDate>
+      <guid>//localhost:1313/posts/silicon/si-1/</guid>
+      <description>Implementation Details aka HOW? For a more serious project, the intepreter / compiler, in this case Sigil, needs to be written in some language. A parser generator is also a REALLY good idea because you can then have a single document that specifies the language&amp;rsquo;s grammar and the implemenation can be changes more easily by changing the grammar and adding a little bit of code. Historically, the best languages for this task include: C, C++, OCaML, and Rust.</description>
+    </item>
+    <item>
+      <title>Silicon Part 3</title>
+      <link>//localhost:1313/posts/silicon/si-3/</link>
+      <pubDate>Wed, 21 Jun 2023 15:36:46 -0700</pubDate>
+      <guid>//localhost:1313/posts/silicon/si-3/</guid>
+      <description>Features List TYPES&#xA;ADTs that use @sum keyword not enum or union Typeclasses / Traits Interfaces that are structurally typed Monads with Monad Trait Type constraints OOP&#xA;@struct value type, public fields, no constructor, no pointers / references @class reference type, private fields, (de)constructor, pointers / reference types OPTIMIZATIONS&#xA;Data Oriented Design like Zig explicit tail-recursion optimization @rec structural interfaces like Go&#xA;Traits / Typeclasses like Rust or OCaml&#xA;built-in testing (unit, ui, fuzzing, benchmark, E2E)</description>
+    </item>
+    <item>
+      <title>Silicon Part 0</title>
+      <link>//localhost:1313/posts/silicon/si-0/</link>
+      <pubDate>Wed, 21 Jun 2023 15:33:29 -0700</pubDate>
+      <guid>//localhost:1313/posts/silicon/si-0/</guid>
+      <description>This is part 0 of a new series that documents my journey developing my own production-grade compiler, sigil, for my programming language, Silicon, that targets WASM.&#xA;This post will cover high-level goals,and non-goals.&#xA;Language Design Step 0 was learning how interpreters and compilers work. Following the interpreter book, I just implemented an interpreter and compiler for an already created language, Monkey; the language was created for the book.&#xA;What about my own language?</description>
+    </item>
+    <item>
+      <title>Making a Programming Language</title>
+      <link>//localhost:1313/posts/making-a-programming-language/</link>
+      <pubDate>Wed, 21 Jun 2023 14:06:47 -0700</pubDate>
+      <guid>//localhost:1313/posts/making-a-programming-language/</guid>
+      <description>Where do programming languages come from? Could I make my own?&#xA;These are the questions the lead me on a journey to learn DSA, interpreters, compilers and more!&#xA;While C++ was my first programming language, I was self-taught in high-school and then didn&amp;rsquo;t code for a few years. I never learned DSA or computer science in my programming two-year degree. I learned web development and 7 programming languages though.&#xA;Once I landed my first job, I felt imposter syndrome.</description>
+    </item>
+    <item>
+      <title>Coding From Scratch</title>
+      <link>//localhost:1313/posts/coding-from-scratch/</link>
+      <pubDate>Sat, 08 Apr 2023 16:06:14 -0500</pubDate>
+      <guid>//localhost:1313/posts/coding-from-scratch/</guid>
+      <description>&amp;ldquo;Where do I even begin?&amp;rdquo; and &amp;ldquo;I have no idea how to code this&amp;rdquo; are common thoughts or comments from my students.&#xA;Let&amp;rsquo;s go over a design for a simple game, Tic-Tac-Toe (naught and crosses for my friends across the pond).&#xA;Don&amp;rsquo;t worry, we won&amp;rsquo;t be using React, npm or any tooling. Just plain ol&amp;rsquo; Javascript, CSS and HTML.&#xA;The Design Here is the design file.&#xA;I want you, the reader, to think about the different elements of the design.</description>
+    </item>
+    <item>
+      <title>Two Crystal Balls Problem</title>
+      <link>//localhost:1313/posts/two-crystal-ball-problem/</link>
+      <pubDate>Wed, 29 Mar 2023 02:12:10 -0500</pubDate>
+      <guid>//localhost:1313/posts/two-crystal-ball-problem/</guid>
+      <description>This is a famous software engineering interview question from Google. I thought I&amp;rsquo;d provide my explanation that is borderline pedantic. Let&amp;rsquo;s solve this problem as naively as possible then again with nothing more than highschool maths.&#xA;The Problem There are a few different versions of this question. Sometimes it is crystal balls, or eggs or something else.&#xA;There is a 100 story building. We have two magic glass orbs. The orbs will only break at or above floor X.</description>
+    </item>
+    <item>
+      <title>Comment Driven Development</title>
+      <link>//localhost:1313/posts/comment-driven-development/</link>
+      <pubDate>Sun, 26 Mar 2023 02:28:19 -0500</pubDate>
+      <guid>//localhost:1313/posts/comment-driven-development/</guid>
+      <description>One of my students asked a great question along the lines of &amp;ldquo;how long did it take you until you could code without being stuck or having to look things up?&amp;rdquo;. I replied &amp;ldquo;it took years&amp;rdquo;, which it did to code at a professional level. I picked up programming pretty quickly by teaching myself in high school. One of my first programs was calculating the quadratic formula, then later I moved onto making games.</description>
+    </item>
+    <item>
+      <title>Fun Function Fundamentals</title>
+      <link>//localhost:1313/posts/fun-function-fundamentals/</link>
+      <pubDate>Sun, 26 Mar 2023 02:28:19 -0500</pubDate>
+      <guid>//localhost:1313/posts/fun-function-fundamentals/</guid>
+      <description>Functions are great. Let&amp;rsquo;s cover some function fundamentals.&#xA;Closures The following code will print 11 10 times. This is because Javascript using var is function scoped, closures.&#xA;for (var x = 0; x &amp;lt; 10; ++x) { setTimeout(() =&amp;gt; console.log(x), 100); } The old school solution is to use a closure.&#xA;for (var x = 0; x &amp;lt; 10; ++x) { (function () { setTimeout(() =&amp;gt; console.log(x), 100); })(x); } A closure is when a function wraps another function.</description>
+    </item>
+    <item>
+      <title>Backend</title>
+      <link>//localhost:1313/posts/backend/</link>
+      <pubDate>Sun, 26 Mar 2023 02:18:25 -0500</pubDate>
+      <guid>//localhost:1313/posts/backend/</guid>
+      <description>Again, even though we&amp;rsquo;ll talk mostly about nodejs, I want to make sure I&amp;rsquo;m teaching you to be a backend developer, not just a node developer. In fact, I want you all to be great software engineers not just REACT developer or JAVA developer.&#xA;I&amp;rsquo;ve used C#, Javascript, Groovy, Bootstrap, Vue, React, AWS, Azure, Sitecore, Kentico, Optimizely etc in my career. I have done my best to not be defined by a specific technology (I was by CMS dev for awhile.</description>
+    </item>
+    <item>
+      <title>Interfaces</title>
+      <link>//localhost:1313/posts/interfaces/</link>
+      <pubDate>Sun, 26 Mar 2023 02:07:32 -0500</pubDate>
+      <guid>//localhost:1313/posts/interfaces/</guid>
+      <description>Interfaces are a crucial concept in software. There are APIs or Application Programming Interfaces, there are ABIs Application Binary Interfaces, UIs User Interfaces, they are everywhere! Even the humble function signature is an interface. Let&amp;rsquo;s not forget the actual interface keyword in many languages too! So what is a @#$% interface?&#xA;Let&amp;rsquo;s find out.&#xA;Baby&amp;rsquo;s first abstraction &amp;ldquo;&amp;hellip;abstract thinking is a higher-level mode of thinking that involves processing theoretical concepts and allows us to make connections and see patterns.</description>
+    </item>
+    <item>
+      <title>&#39;This&#39; That and Dispatch</title>
+      <link>//localhost:1313/posts/this-that-and-dispatch/</link>
+      <pubDate>Thu, 23 Mar 2023 14:54:18 -0500</pubDate>
+      <guid>//localhost:1313/posts/this-that-and-dispatch/</guid>
+      <description>There are numerous blogs and videos about Javascript&amp;rsquo;s this keyword. In my opinion, virtually all of them fall short and fail to even mention dispatch or binding.&#xA;As always, I encourage polyglot programming. So I&amp;rsquo;ll be showing examples is Javascript, C#, Go and Rust.&#xA;Back to the basics First, let us cover some really basic but critical Javascript.&#xA;function greet(name) { console.log(`hello, ${name}`); } function greet() { console.log(`hello, stranger`); } greet(&amp;#34;natescode&amp;#34;); Which function is called?</description>
+    </item>
+    <item>
+      <title>Beyond Coding Bootcamp: Now What?</title>
+      <link>//localhost:1313/posts/beyond-bootcamp-now-what/</link>
+      <pubDate>Thu, 23 Mar 2023 14:54:18 -0500</pubDate>
+      <guid>//localhost:1313/posts/beyond-bootcamp-now-what/</guid>
+      <description>So you graduated a coding bootcamp, or freecodecamp.org, or degree of some sort like AAS in programming or BS in Computer Science, now what?&#xA;Here are some tips for my new graduates.&#xA;Skills While you&amp;rsquo;re looking you should be working on your skills. Work backwards by finding the type of jobs you want and working on the skills they mention.&#xA;For my bootcamp students, just build stuff with what you&amp;rsquo;ve already learned.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/posts/gatekeeping-misinformation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/gatekeeping-misinformation/</guid>
+      <description>Gatekeeping Misinformation This post should go viral due to my selection of two hot, divisive buzzwords. In all seriousness, this is an opinion post. I word really hard to write quality posts, this is why my quantity is lower.&#xA;Gatekeeping this not this I feel like there is general support for gatekeeping misinformation. (I&amp;rsquo;m NOT going political with this). Yet, when a software engineer with 2 decades of experience posted on LinkedIn that he has reservations about making blog posts to teach because teaching is so difficult to do well, even for someone competent like himself, he is accused of &amp;ldquo;gatekeeping&amp;rdquo; as if &amp;ldquo;gatekeeping&amp;rdquo; poor quality blog posts about technology is any different than the war on &amp;ldquo;misinformation&amp;rdquo;.</description>
+    </item>
+  </channel>
+</rss>

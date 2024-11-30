@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Concepts on Hello Friend NG</title>
+    <link>//localhost:1313/tags/concepts/</link>
+    <description>Recent content in Concepts on Hello Friend NG</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sat, 13 Jul 2024 01:55:29 -0500</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/concepts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Optimize Code by Doing Less</title>
+      <link>//localhost:1313/posts/null-is-innocent/</link>
+      <pubDate>Sat, 13 Jul 2024 01:55:29 -0500</pubDate>
+      <guid>//localhost:1313/posts/null-is-innocent/</guid>
+      <description>Null is innocent, blame the type system! So for a long time I was confused about null. I kept hearing null is bad but then seeing the answer being Optional&amp;lt;T&amp;gt; and Some x or None. I was like okay so null is bad but None is okay? Couldn&amp;rsquo;t we just call None null ?&#xA;The answer is that null isn&amp;rsquo;t the problem, the type system is! Here is an example in C#.</description>
+    </item>
+    <item>
+      <title>Dry Brittle Code</title>
+      <link>//localhost:1313/posts/dry-brittle-code/</link>
+      <pubDate>Fri, 28 Jun 2024 10:24:34 -0600</pubDate>
+      <guid>//localhost:1313/posts/dry-brittle-code/</guid>
+      <description>Software Engineer students will hear &amp;ldquo;DRY&amp;rdquo; or Don&amp;rsquo;t Repeat Yourself numerous times as they are learning to design, build and test software. Even professionals will argue over removing duplicate code. Unfortunately, making code DRY isn&amp;rsquo;t as cut-and-dry (pun intended).&#xA;Here is a really simple example of DRY and brittle code. Say we have some CSS like below.&#xA;```css .service-card { font-family: monospace; background-color: #18B218; width: 320px; height: 200px; } .product-card{ font-family: monospace; background-color: #18B218; width: 320px; height: 200px; } ``` Just because there are duplicate values does not mean there are duplicate semantics.</description>
+    </item>
+    <item>
+      <title>Separation of Concerns Not Code</title>
+      <link>//localhost:1313/posts/separation-of-concerns-not-code/</link>
+      <pubDate>Thu, 30 May 2024 10:46:44 -0500</pubDate>
+      <guid>//localhost:1313/posts/separation-of-concerns-not-code/</guid>
+      <description>I was going to name this post &amp;ldquo;Concerns vs Responsibilities&amp;rdquo; which I&amp;rsquo;ll be covering here anyways.&#xA;S.O.L.I.D starts with S for &amp;ldquo;Single-Responibliity Principle&amp;rdquo;, making sure code: function, object etc. do one thing well. We also have the concept of &amp;ldquo;Separation of Concerns&amp;rdquo;. I think Responsilibities and Concerns get conflated and the definitions get confused. The follow is completely my opinion based on my experience and not anything canon or &amp;ldquo;official&amp;rdquo;.</description>
+    </item>
+    <item>
+      <title>Pillars of Software Engineering</title>
+      <link>//localhost:1313/posts/pillars-of-software-engineering/</link>
+      <pubDate>Sun, 28 Apr 2024 10:59:55 -0500</pubDate>
+      <guid>//localhost:1313/posts/pillars-of-software-engineering/</guid>
+      <description>Interfaces, Protocols, Specifications and Standards There are four pillars of SWE abstractions: Interfaces, Protocols, Specifications and Standards. These four pillars encompass all of software. Everything becomes clearer, once these terms and concepts are deeply understood.&#xA;Interfaces &amp;ldquo;The point of communication between two systems&amp;rdquo;&#xA;A traffic light is an interface. It is the point of communication between the driver and the intersection&#xA;The traffic light has a very simple interface. Let&amp;rsquo;s define it in code.</description>
+    </item>
+    <item>
+      <title>Software Symptoms vs Problems</title>
+      <link>//localhost:1313/posts/software-symptoms-vs-problems/</link>
+      <pubDate>Thu, 18 Apr 2024 00:22:13 -0500</pubDate>
+      <guid>//localhost:1313/posts/software-symptoms-vs-problems/</guid>
+      <description>Symptoms vs Problems is something I&amp;rsquo;ve run into a lot lately. For example, our production support team has received multiple tickets about a specific screen, let&amp;rsquo;s call it QuickEdit, that allows the users to quickly edit some data. On save, the request will often timeout.&#xA;According to the business, they ask if we can just quickly fix this page. Maybe not allow multi-editing. The issue isn&amp;rsquo;t on the UI, that&amp;rsquo;s just where we see the symptom.</description>
+    </item>
+    <item>
+      <title>Interfaces</title>
+      <link>//localhost:1313/posts/interfaces/</link>
+      <pubDate>Sun, 26 Mar 2023 02:07:32 -0500</pubDate>
+      <guid>//localhost:1313/posts/interfaces/</guid>
+      <description>Interfaces are a crucial concept in software. There are APIs or Application Programming Interfaces, there are ABIs Application Binary Interfaces, UIs User Interfaces, they are everywhere! Even the humble function signature is an interface. Let&amp;rsquo;s not forget the actual interface keyword in many languages too! So what is a @#$% interface?&#xA;Let&amp;rsquo;s find out.&#xA;Baby&amp;rsquo;s first abstraction &amp;ldquo;&amp;hellip;abstract thinking is a higher-level mode of thinking that involves processing theoretical concepts and allows us to make connections and see patterns.</description>
+    </item>
+    <item>
+      <title>&#39;This&#39; That and Dispatch</title>
+      <link>//localhost:1313/posts/this-that-and-dispatch/</link>
+      <pubDate>Thu, 23 Mar 2023 14:54:18 -0500</pubDate>
+      <guid>//localhost:1313/posts/this-that-and-dispatch/</guid>
+      <description>There are numerous blogs and videos about Javascript&amp;rsquo;s this keyword. In my opinion, virtually all of them fall short and fail to even mention dispatch or binding.&#xA;As always, I encourage polyglot programming. So I&amp;rsquo;ll be showing examples is Javascript, C#, Go and Rust.&#xA;Back to the basics First, let us cover some really basic but critical Javascript.&#xA;function greet(name) { console.log(`hello, ${name}`); } function greet() { console.log(`hello, stranger`); } greet(&amp;#34;natescode&amp;#34;); Which function is called?</description>
+    </item>
+  </channel>
+</rss>

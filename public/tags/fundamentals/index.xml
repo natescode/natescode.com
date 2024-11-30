@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fundamentals on Hello Friend NG</title>
+    <link>//localhost:1313/tags/fundamentals/</link>
+    <description>Recent content in Fundamentals on Hello Friend NG</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sun, 28 Apr 2024 10:59:55 -0500</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/fundamentals/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pillars of Software Engineering</title>
+      <link>//localhost:1313/posts/pillars-of-software-engineering/</link>
+      <pubDate>Sun, 28 Apr 2024 10:59:55 -0500</pubDate>
+      <guid>//localhost:1313/posts/pillars-of-software-engineering/</guid>
+      <description>Interfaces, Protocols, Specifications and Standards There are four pillars of SWE abstractions: Interfaces, Protocols, Specifications and Standards. These four pillars encompass all of software. Everything becomes clearer, once these terms and concepts are deeply understood.&#xA;Interfaces &amp;ldquo;The point of communication between two systems&amp;rdquo;&#xA;A traffic light is an interface. It is the point of communication between the driver and the intersection&#xA;The traffic light has a very simple interface. Let&amp;rsquo;s define it in code.</description>
+    </item>
+    <item>
+      <title>Premature Optimization</title>
+      <link>//localhost:1313/posts/premature-optimization/</link>
+      <pubDate>Sun, 24 Mar 2024 14:00:30 -0500</pubDate>
+      <guid>//localhost:1313/posts/premature-optimization/</guid>
+      <description>What is &amp;ldquo;premature optimization&amp;rdquo;? We often hear developers argue against it quoting Donald Knuth&amp;rsquo;s from The Art of Computer Programming:&#xA;“The real problem is that programmers have spent far too much time worrying about efficiency in the wrong places and at the wrong times; premature optimization is the root of all evil (or at least most of it) in programming.”&#xA;So what is premature optimization? Optimization is NOT bad. So when is the correct time or context to optimize code?</description>
+    </item>
+    <item>
+      <title>Tests vs Types</title>
+      <link>//localhost:1313/posts/tests-vs-types/</link>
+      <pubDate>Wed, 02 Aug 2023 08:52:40 -0500</pubDate>
+      <guid>//localhost:1313/posts/tests-vs-types/</guid>
+      <description>&amp;ldquo;We don&amp;rsquo;t need complex, stupid, cumbersome types and compilation to prevent bugs in production, types can&amp;rsquo;t prevent all bugs anyways. Just write more tests!&amp;rdquo; &amp;ndash; Tess&#xA;&amp;ldquo;Yes we do! We wouldn&amp;rsquo;t need to write so many complex mocks for tests that take forever to run in our CI / CD pipeline if we used a REAL language that is statically typed. &amp;quot; &amp;ndash; Tyler&#xA;As you can see from the conversation, or argument above, Tess prefers Tests and Tyler prefers types; who is correct?</description>
+    </item>
+  </channel>
+</rss>
