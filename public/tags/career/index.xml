@@ -7,35 +7,14 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>All Rights Reserved</copyright>
-    <lastBuildDate>Fri, 28 Jun 2024 10:24:34 -0600</lastBuildDate>
+    <lastBuildDate>Tue, 02 Apr 2024 16:39:58 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/career/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Dry Brittle Code</title>
-      <link>http://localhost:1313/posts/2024/06/dry-brittle-code/</link>
-      <pubDate>Fri, 28 Jun 2024 10:24:34 -0600</pubDate>
-      <guid>http://localhost:1313/posts/2024/06/dry-brittle-code/</guid>
-      <description>Software Engineer students will hear &amp;ldquo;DRY&amp;rdquo; or Don&amp;rsquo;t Repeat Yourself numerous times as they are learning to design, build and test software. Even professionals will argue over removing duplicate code. Unfortunately, making code DRY isn&amp;rsquo;t as cut-and-dry (pun intended).&#xA;Here is a really simple example of DRY and brittle code. Say we have some CSS like below.&#xA;```css .service-card { font-family: monospace; background-color: #18B218; width: 320px; height: 200px; } .product-card{ font-family: monospace; background-color: #18B218; width: 320px; height: 200px; } ``` Just because there are duplicate values does not mean there are duplicate semantics.</description>
-    </item>
-    <item>
-      <title>Economics of Software</title>
-      <link>http://localhost:1313/posts/2024/05/economics-of-software/</link>
-      <pubDate>Sat, 04 May 2024 14:28:34 -0700</pubDate>
-      <guid>http://localhost:1313/posts/2024/05/economics-of-software/</guid>
-      <description>Software development only exists because software can provide value to businesses and customers. I think many software developers, especially juniors and aspirining developers forget this. Yes, DSA have value and architecture has value. But at the end of the day if you aren&amp;rsquo;t shipping code that provideds business value, your fancy purely functional, well architectued code doesn&amp;rsquo;t matter.&#xA;YouTubers make it sound like all software engineers do is Leetcode in their interviews and solving complex problems by thinking all day.</description>
-    </item>
     <item>
       <title>Software Interviews Explained</title>
       <link>http://localhost:1313/posts/2024/04/software-interviews-explained/</link>
       <pubDate>Tue, 02 Apr 2024 16:39:58 -0500</pubDate>
       <guid>http://localhost:1313/posts/2024/04/software-interviews-explained/</guid>
       <description>Practical Software Interviews A medium article about Google interviews sparked an interesting debate about technical interview methods and questions. I realized that the vast majority of developers have never been the interviewer. Many developers may misunderstand the goals of a technical interview and the vantage point of the technical interviewer. Furthermore, influencers make Leetcode style interviews seem like they&amp;rsquo;re common outside of FAANG; they&amp;rsquo;re not. Here I&amp;rsquo;ll go over how typical software engineer interviews are run as well as debunking some common myths about software interviews.</description>
-    </item>
-    <item>
-      <title>Beyond Coding Bootcamp: Now What?</title>
-      <link>http://localhost:1313/posts/2023/03/beyond-coding-bootcamp-now-what/</link>
-      <pubDate>Thu, 23 Mar 2023 14:54:18 -0500</pubDate>
-      <guid>http://localhost:1313/posts/2023/03/beyond-coding-bootcamp-now-what/</guid>
-      <description>So you graduated a coding bootcamp, or freecodecamp.org, or degree of some sort like AAS in programming or BS in Computer Science, now what?&#xA;Here are some tips for my new graduates.&#xA;Skills While you&amp;rsquo;re looking you should be working on your skills. Work backwards by finding the type of jobs you want and working on the skills they mention.&#xA;For my bootcamp students, just build stuff with what you&amp;rsquo;ve already learned.</description>
     </item>
   </channel>
 </rss>

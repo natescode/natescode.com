@@ -1,3 +1,12 @@
+---
+title: "Gatekeeping Misinformation"
+date: 2024-07-26T02:28:19-05:00
+draft: true
+toc: false
+images:
+tags:
+  - untagged
+---
 # Gatekeeping Misinformation
 
 This post should go viral due to my selection of two hot, divisive buzzwords. In all seriousness, this is an opinion post. I word _really_ hard to write quality posts, this is why my quantity is lower.

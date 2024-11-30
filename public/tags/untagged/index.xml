@@ -7,77 +7,14 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>All Rights Reserved</copyright>
-    <lastBuildDate>Fri, 29 Nov 2024 12:36:46 -0600</lastBuildDate>
+    <lastBuildDate>Tue, 01 Aug 2023 00:00:00 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Aaa</title>
-      <link>http://localhost:1313/posts/2024/11/aaa/</link>
-      <pubDate>Fri, 29 Nov 2024 12:36:46 -0600</pubDate>
-      <guid>http://localhost:1313/posts/2024/11/aaa/</guid>
-      <description>Testing !</description>
-    </item>
-    <item>
-      <title>Pair Programming</title>
-      <link>http://localhost:1313/posts/2024/10/pair-programming/</link>
-      <pubDate>Sat, 19 Oct 2024 21:22:59 -0500</pubDate>
-      <guid>http://localhost:1313/posts/2024/10/pair-programming/</guid>
-      <description>Pair Programming is a part of of XP programming which seemed to be pushed mostly in the early 2000&amp;rsquo;s. I have heard that it can work, of course it sounds like a huge waste of time most of the time.&#xA;Pair Programming Defined I think we need to define it. Some XP evangelists say that one person coding and another watching is NOT pair programming. Ok, then what it?&#xA;There are tools for IDEs / editors for developers to code on the same code at the same time.</description>
-    </item>
-    <item>
-      <title>Wordle Interview Challenge</title>
-      <link>http://localhost:1313/posts/2024/10/wordle-interview-challenge/</link>
-      <pubDate>Fri, 04 Oct 2024 21:54:34 -0500</pubDate>
-      <guid>http://localhost:1313/posts/2024/10/wordle-interview-challenge/</guid>
-      <description>I like Wordle, currently I have a 117 day streak on hard mode.&#xA;Here is what I think is a really good interview question concerning Wordle.</description>
-    </item>
-    <item>
-      <title>What to Know Before Coding Bootcamp</title>
-      <link>http://localhost:1313/posts/2024/06/what-to-know-before-coding-bootcamp/</link>
-      <pubDate>Fri, 21 Jun 2024 15:11:13 -0500</pubDate>
-      <guid>http://localhost:1313/posts/2024/06/what-to-know-before-coding-bootcamp/</guid>
-      <description>I am a lead software engineer by day and a coding bootcamp instructor by night. Here are some prerequisites skills to know before attending a coding bootcamp.&#xA;Basic Computer Skills I see many students that don&amp;rsquo;t know what a ZIP file is or how to unzip it.&#xA;Basic computer shortcuts like copy (CTRL + C) and paste (CTRL + V).&#xA;Understanding how you files are structured i.e. you user folder aka home is C:/users/your_name on Windows.</description>
-    </item>
-    <item>
-      <title>Dev Lead Day in the Life</title>
-      <link>http://localhost:1313/posts/2024/05/dev-lead-day-in-the-life/</link>
-      <pubDate>Sat, 04 May 2024 18:08:26 -0700</pubDate>
-      <guid>http://localhost:1313/posts/2024/05/dev-lead-day-in-the-life/</guid>
-      <description>Software</description>
-    </item>
-    <item>
-      <title>Soft Skills for Software Engineers</title>
-      <link>http://localhost:1313/posts/2024/04/soft-skills-for-software-engineers/</link>
-      <pubDate>Wed, 10 Apr 2024 20:34:43 -0500</pubDate>
-      <guid>http://localhost:1313/posts/2024/04/soft-skills-for-software-engineers/</guid>
-      <description>Computer Science students, bootcampers etc. Often think a career in software is solely defined by their hard technical skills. In fact, they may think that in order to get promoted they have to demonstrate only technical skills.&#xA;I&amp;rsquo;m going to cover five soft-skill concepts developers need to understand.&#xA;Understanding Agile People Skills </description>
-    </item>
-    <item>
-      <title>OOP vs FP</title>
-      <link>http://localhost:1313/posts/2023/12/oop-vs-fp/</link>
-      <pubDate>Sat, 02 Dec 2023 14:35:19 -0500</pubDate>
-      <guid>http://localhost:1313/posts/2023/12/oop-vs-fp/</guid>
-      <description>There has been numerous reactions to the reactions to the reactions of a certain Tech Influencer, who works at Netflix BTW, reacting to a Continuous Deliver video about OOP vs FP.&#xA;FP Functions are the main abstraction Functions are pure a) referential transparency: same output for a given input b) no side-effects: no mutation, no outside state (no IO) First, let&amp;rsquo;s actually define OOP and FP. FP is the easiest to define because it is based on lambda calculus.</description>
-    </item>
-    <item>
-      <title>Microservices: Death by a Thousand Papercuts</title>
-      <link>http://localhost:1313/posts/2023/09/microservices-death-by-a-thousand-papercuts/</link>
-      <pubDate>Mon, 04 Sep 2023 14:21:35 -0500</pubDate>
-      <guid>http://localhost:1313/posts/2023/09/microservices-death-by-a-thousand-papercuts/</guid>
-      <description>Microservices is another hot buzzword in tech right now. I&amp;rsquo;m not hear to talk bad about microservices; I&amp;rsquo;m no expert. I have had some experience though.&#xA;Best Buy I couldn&amp;rsquo;t get the payment information. Completely separate services and database. So I didn&amp;rsquo;t do the task. The fact my manager was mad says a lot. Did he NOT look at the user story? That is a really easy thing to catch. Backroom does not have any pricing information.</description>
-    </item>
-    <item>
-      <title>The Last Monad Tutorial</title>
-      <link>http://localhost:1313/posts/2023/08/the-last-monad-tutorial/</link>
-      <pubDate>Tue, 08 Aug 2023 11:49:16 -0500</pubDate>
-      <guid>http://localhost:1313/posts/2023/08/the-last-monad-tutorial/</guid>
-      <description>Monad Definition:&#xA;Monad is a monoid in the category of endofunctors&#xA;That&amp;rsquo;s it!&#xA;Just kidding.&#xA;Monad is a container type that has some associated methods&#xA;interface monad&amp;lt;T&amp;gt; { wrap(T): Monad&amp;lt;T&amp;gt;; unwrap&amp;lt;T&amp;gt;(): T; map(monad: monad&amp;lt;T&amp;gt;): monad&amp;lt;T&amp;gt;; flatmap(monad: monad&amp;lt;T&amp;gt;, fn): monad&amp;lt;T&amp;gt;; } The simplist monad is an array.&#xA;[1]; We can unwrap the array and get the containing values.&#xA;function unwrap(array:[]any):any { return array[0] } we can wrap a value into an array</description>
-    </item>
-    <item>
-      <title>Referential Transparency</title>
-      <link>http://localhost:1313/posts/2023/08/referential-transparency/</link>
-      <pubDate>Thu, 03 Aug 2023 07:07:19 -0500</pubDate>
-      <guid>http://localhost:1313/posts/2023/08/referential-transparency/</guid>
-      <description>Referential Transparency is a confusing term. It is a really simple concept, I promise.&#xA;Referential Transparency is a fancy term for the substitution property of equality. Meaning = really means those two things are equal and interchangeable.&#xA;Let&amp;rsquo;s see as simple example.&#xA;const a = 1; a + a === 1 + 1; // true If a = 1 then we can replace all instances of a with 1 and everything works the same.</description>
+      <title>Tailwind: Debunking the Debunkers</title>
+      <link>http://localhost:1313/posts/2023/08/tailwind-debunking-the-debunkers/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 -0500</pubDate>
+      <guid>http://localhost:1313/posts/2023/08/tailwind-debunking-the-debunkers/</guid>
+      <description>I&amp;rsquo;ve seen a TON of hate for Tailwind. While I don&amp;rsquo;t care much about which technologies other developers use, I do care when developers spread lies because they are religiously for or against a particular technology. I&amp;rsquo;m not much of a technology fan-boy; I use what works for the given requirements. Don&amp;rsquo;t get me wrong, I still have plenty of strong opinions but they&amp;rsquo;re more about general techniques, attitudes etc and not about specific libraries or technologies.</description>
     </item>
   </channel>
 </rss>

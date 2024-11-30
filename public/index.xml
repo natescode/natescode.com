@@ -17,67 +17,46 @@
       <description>My co-worker, Abdullahi, encouraged me to write this post. Since I&amp;rsquo;m on Thanskgiving vacation, I thought why not? Plus, writting this post proves him correct; I&amp;rsquo;m very productive.&#xA;I generally don&amp;rsquo;t think of myself as very productive. I was diagnosed with ADHD. I&amp;rsquo;ve always tried to take on too many projects, jobs and challenges; failing multiple responsibilities simultaneously.&#xA;I work 2 jobs, sometimes 3, I am a father of twin girls that are in school plus I make time to work on NatesCode blog posts, videos, exercise and be a son, boyfriend and play DnD.</description>
     </item>
     <item>
-      <title>Pair Programming</title>
-      <link>http://localhost:1313/posts/2024/10/pair-programming/</link>
-      <pubDate>Sat, 19 Oct 2024 21:22:59 -0500</pubDate>
-      <guid>http://localhost:1313/posts/2024/10/pair-programming/</guid>
-      <description>Pair Programming is a part of of XP programming which seemed to be pushed mostly in the early 2000&amp;rsquo;s. I have heard that it can work, of course it sounds like a huge waste of time most of the time.&#xA;Pair Programming Defined I think we need to define it. Some XP evangelists say that one person coding and another watching is NOT pair programming. Ok, then what is?&#xA;Pair programming can be</description>
+      <title>Software Interviews Explained</title>
+      <link>http://localhost:1313/posts/2024/04/software-interviews-explained/</link>
+      <pubDate>Tue, 02 Apr 2024 16:39:58 -0500</pubDate>
+      <guid>http://localhost:1313/posts/2024/04/software-interviews-explained/</guid>
+      <description>Practical Software Interviews A medium article about Google interviews sparked an interesting debate about technical interview methods and questions. I realized that the vast majority of developers have never been the interviewer. Many developers may misunderstand the goals of a technical interview and the vantage point of the technical interviewer. Furthermore, influencers make Leetcode style interviews seem like they&amp;rsquo;re common outside of FAANG; they&amp;rsquo;re not. Here I&amp;rsquo;ll go over how typical software engineer interviews are run as well as debunking some common myths about software interviews.</description>
     </item>
     <item>
-      <title>Wordle Interview Challenge</title>
-      <link>http://localhost:1313/posts/2024/10/wordle-interview-challenge/</link>
-      <pubDate>Fri, 04 Oct 2024 21:54:34 -0500</pubDate>
-      <guid>http://localhost:1313/posts/2024/10/wordle-interview-challenge/</guid>
-      <description>I like Wordle, currently I have a 117 day streak on hard mode.&#xA;Here is what I think is a really good interview question concerning Wordle.</description>
+      <title>Dangers of Functional Programming</title>
+      <link>http://localhost:1313/posts/2023/12/dangers-of-functional-programming/</link>
+      <pubDate>Wed, 06 Dec 2023 15:33:15 -0600</pubDate>
+      <guid>http://localhost:1313/posts/2023/12/dangers-of-functional-programming/</guid>
+      <description>Functional Programming has grown in popularity the last few years. Unfortunately, that also means it has become a bit of a buzzword. Some may call themselves &amp;ldquo;FP nerds&amp;rdquo; while only superficially emulating functional programming.&#xA;Sometimes mimicking functional techniques, especially in a non-functional language, I&amp;rsquo;m looking at you ES2024, is bit inefficient or dangerous. Let&amp;rsquo;s cover some dangers of blindly using FP techniques without understand how they work instead of blindly following some self-proclaimed FP guru (typical FAANG to influencer) told you FP is a panacea.</description>
     </item>
     <item>
-      <title>More TDD Less PRs</title>
-      <link>http://localhost:1313/posts/2024/07/more-tdd-less-prs/</link>
-      <pubDate>Sat, 13 Jul 2024 07:37:52 -0500</pubDate>
-      <guid>http://localhost:1313/posts/2024/07/more-tdd-less-prs/</guid>
-      <description>I wanted a fancy title that wasn&amp;rsquo;t clickbaity. I&amp;rsquo;ve been experimenting with a coding approach at work that I want to share. At work, like any good company we write tests for our code. Not always first, but at least we generally have quality tests. The IT Director has pushed hard for code coverage which I strongly disagree with. One engineer spend 2 full days writing tests in order to commit 17 lines of code because the code coverage percentage fell, oh no we ONLY had 95% code coverage.</description>
+      <title>Typing Speed Matters for Software Developers</title>
+      <link>http://localhost:1313/posts/2023/09/typing-speed-matters-for-software-developers/</link>
+      <pubDate>Sat, 23 Sep 2023 21:56:58 -0400</pubDate>
+      <guid>http://localhost:1313/posts/2023/09/typing-speed-matters-for-software-developers/</guid>
+      <description>Typing efficiency and speed is an often underrated and underappreciated skill for new and novice developers. I teach a coding bootcamp. I see adults of all ages, talents, backgrounds and walks of life start their journey into software development.&#xA;One issue, of many, I have with coding bootcamps is that they say there are no prerequisits when there definitely are. I&amp;rsquo;ve seen students start bootcamp with a brand-new laptop, likely their first, log onto the Zoom class all bright eyed with ethusiam and wonder.</description>
     </item>
     <item>
-      <title>Optimize Code by Doing Less</title>
-      <link>http://localhost:1313/posts/2024/07/optimize-code-by-doing-less/</link>
-      <pubDate>Sat, 13 Jul 2024 01:55:29 -0500</pubDate>
-      <guid>http://localhost:1313/posts/2024/07/optimize-code-by-doing-less/</guid>
-      <description>Null is innocent, blame the type system! So for a long time I was confused about null. I kept hearing null is bad but then seeing the answer being Optional&amp;lt;T&amp;gt; and Some x or None. I was like okay so null is bad but None is okay? Couldn&amp;rsquo;t we just call None null ?&#xA;The answer is that null isn&amp;rsquo;t the problem, the type system is! Here is an example in C#.</description>
+      <title>Tailwind: Debunking the Debunkers</title>
+      <link>http://localhost:1313/posts/2023/08/tailwind-debunking-the-debunkers/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 -0500</pubDate>
+      <guid>http://localhost:1313/posts/2023/08/tailwind-debunking-the-debunkers/</guid>
+      <description>I&amp;rsquo;ve seen a TON of hate for Tailwind. While I don&amp;rsquo;t care much about which technologies other developers use, I do care when developers spread lies because they are religiously for or against a particular technology. I&amp;rsquo;m not much of a technology fan-boy; I use what works for the given requirements. Don&amp;rsquo;t get me wrong, I still have plenty of strong opinions but they&amp;rsquo;re more about general techniques, attitudes etc and not about specific libraries or technologies.</description>
     </item>
     <item>
-      <title>Optimize Code by Doing Less</title>
-      <link>http://localhost:1313/posts/2024/07/optimize-code-by-doing-less/</link>
-      <pubDate>Sat, 13 Jul 2024 01:29:33 -0500</pubDate>
-      <guid>http://localhost:1313/posts/2024/07/optimize-code-by-doing-less/</guid>
-      <description>Anytime code needs to be optimized for performance, be that performance in time or memory usage, we can simply say &amp;ldquo;well just do less&amp;rdquo;. I always think &amp;ldquo;do less&amp;rdquo; when I&amp;rsquo;m optimizing code. Here are my thoughts of what exactly &amp;ldquo;do less&amp;rdquo; means by answering &amp;ldquo;Do less of what?&amp;rdquo;.&#xA;&amp;ldquo;Do less of what?&amp;rdquo; &amp;ndash; ME at 01:00 AM&#xA;Do Less: Less Algorithmic Complexity The most intuitive change is to create an algorithm that performance fewer steps.</description>
+      <title>Two Crystal Balls Problem</title>
+      <link>http://localhost:1313/posts/2023/03/two-crystal-balls-problem/</link>
+      <pubDate>Wed, 29 Mar 2023 02:12:10 -0500</pubDate>
+      <guid>http://localhost:1313/posts/2023/03/two-crystal-balls-problem/</guid>
+      <description>This is a famous software engineering interview question from Google. I thought I&amp;rsquo;d provide my explanation that is borderline pedantic. Let&amp;rsquo;s solve this problem as naively as possible then again with nothing more than highschool maths.&#xA;The Problem There are a few different versions of this question. Sometimes it is crystal balls, or eggs or something else.&#xA;There is a 100 story building. We have two magic glass orbs. The orbs will only break at or above floor X.</description>
     </item>
     <item>
-      <title>Dry Brittle Code</title>
-      <link>http://localhost:1313/posts/2024/06/dry-brittle-code/</link>
-      <pubDate>Fri, 28 Jun 2024 10:24:34 -0600</pubDate>
-      <guid>http://localhost:1313/posts/2024/06/dry-brittle-code/</guid>
-      <description>Software Engineer students will hear &amp;ldquo;DRY&amp;rdquo; or Don&amp;rsquo;t Repeat Yourself numerous times as they are learning to design, build and test software. Even professionals will argue over removing duplicate code. Unfortunately, making code DRY isn&amp;rsquo;t as cut-and-dry (pun intended).&#xA;Here is a really simple example of DRY and brittle code. Say we have some CSS like below.&#xA;```css .service-card { font-family: monospace; background-color: #18B218; width: 320px; height: 200px; } .product-card{ font-family: monospace; background-color: #18B218; width: 320px; height: 200px; } ``` Just because there are duplicate values does not mean there are duplicate semantics.</description>
-    </item>
-    <item>
-      <title>What to Know Before Coding Bootcamp</title>
-      <link>http://localhost:1313/posts/2024/06/what-to-know-before-coding-bootcamp/</link>
-      <pubDate>Fri, 21 Jun 2024 15:11:13 -0500</pubDate>
-      <guid>http://localhost:1313/posts/2024/06/what-to-know-before-coding-bootcamp/</guid>
-      <description>I am a lead software engineer by day and a coding bootcamp instructor by night. Here are some prerequisites skills to know before attending a coding bootcamp.&#xA;Basic Computer Skills I see many students that don&amp;rsquo;t know what a ZIP file is or how to unzip it.&#xA;Basic computer shortcuts like copy (CTRL + C) and paste (CTRL + V).&#xA;Understanding how you files are structured i.e. you user folder aka home is C:/users/your_name on Windows.</description>
-    </item>
-    <item>
-      <title>Separation of Concerns Not Code</title>
-      <link>http://localhost:1313/posts/2024/05/separation-of-concerns-not-code/</link>
-      <pubDate>Thu, 30 May 2024 10:46:44 -0500</pubDate>
-      <guid>http://localhost:1313/posts/2024/05/separation-of-concerns-not-code/</guid>
-      <description>I was going to name this post &amp;ldquo;Concerns vs Responsibilities&amp;rdquo; which I&amp;rsquo;ll be covering here anyways.&#xA;S.O.L.I.D starts with S for &amp;ldquo;Single-Responibliity Principle&amp;rdquo;, making sure code: function, object etc. do one thing well. We also have the concept of &amp;ldquo;Separation of Concerns&amp;rdquo;. I think Responsilibities and Concerns get conflated and the definitions get confused. The follow is completely my opinion based on my experience and not anything canon or &amp;ldquo;official&amp;rdquo;.</description>
-    </item>
-    <item>
-      <title>Practical Principles of Programming Paradigms</title>
-      <link>http://localhost:1313/posts/2024/05/practical-principles-of-programming-paradigms/</link>
-      <pubDate>Mon, 13 May 2024 23:45:53 -0500</pubDate>
-      <guid>http://localhost:1313/posts/2024/05/practical-principles-of-programming-paradigms/</guid>
-      <description>Ultimately, all software paradigms are made of serveral different applications of code augmentation strategies.&#xA;I wasn&amp;rsquo;t sure what to call this post. I was thinking about how to categorize the different ways software developers add new code to existing code, augmentation. These tie in closely with software paradigms but they are not paradigms in and of themselves.&#xA;I will go over three methods of code augmentation.&#xA;Encapsulation (Composition) High Order Functions (or components) Decorators (Decorator pattern and language features aka attributes) Dependency Injection Middleware / hooks / frameworks Encapsulation is all about wrapping existing code with new code.</description>
+      <title>&#39;This&#39; That and Dispatch</title>
+      <link>http://localhost:1313/posts/2023/03/this-that-and-dispatch/</link>
+      <pubDate>Thu, 23 Mar 2023 14:54:18 -0500</pubDate>
+      <guid>http://localhost:1313/posts/2023/03/this-that-and-dispatch/</guid>
+      <description>There are numerous blogs and videos about Javascript&amp;rsquo;s this keyword. In my opinion, virtually all of them fall short and fail to even mention dispatch or binding.&#xA;As always, I encourage polyglot programming. So I&amp;rsquo;ll be showing examples is Javascript, C#, Go and Rust.&#xA;Back to the basics First, let us cover some really basic but critical Javascript.&#xA;function greet(name) { console.log(`hello, ${name}`); } function greet() { console.log(`hello, stranger`); } greet(&amp;#34;natescode&amp;#34;); Which function is called?</description>
     </item>
   </channel>
 </rss>

@@ -7,15 +7,8 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>All Rights Reserved</copyright>
-    <lastBuildDate>Fri, 24 Nov 2023 20:49:30 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 23 Sep 2023 21:56:58 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/softskills/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Theory vs Practice in Software</title>
-      <link>http://localhost:1313/posts/2023/11/theory-vs-practice-in-software/</link>
-      <pubDate>Fri, 24 Nov 2023 20:49:30 -0500</pubDate>
-      <guid>http://localhost:1313/posts/2023/11/theory-vs-practice-in-software/</guid>
-      <description>I notice that when I have discourse with other developers online that there is a disconnect. Most developers, about 58%, have less than 10 years of experience. This means that more often than not, I have more experience than the developer I am debating with. Experience doesn&amp;rsquo;t make me correct of course, I&amp;rsquo;m a mediocre developer at best. However, having more experience means that I&amp;rsquo;ve seen &amp;ldquo;TDD&amp;rdquo;, &amp;ldquo;Agile&amp;rdquo;, &amp;ldquo;ORMs&amp;rdquo; and many other technologies, methodogies both succeed and fail in real-world use.</description>
-    </item>
     <item>
       <title>Typing Speed Matters for Software Developers</title>
       <link>http://localhost:1313/posts/2023/09/typing-speed-matters-for-software-developers/</link>
