@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Bootcamps on Hello Friend NG</title>
-    <link>//localhost:1313/tags/bootcamps/</link>
-    <description>Recent content in Bootcamps on Hello Friend NG</description>
+    <title>Bootcamps on natescode blog</title>
+    <link>http://localhost:1313/tags/bootcamps/</link>
+    <description>Recent content in Bootcamps on natescode blog</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <copyright>All Rights Reserved</copyright>
     <lastBuildDate>Wed, 06 Dec 2023 16:00:42 -0600</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/bootcamps/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/bootcamps/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Exposing Coding Bootcamp From an Instructor</title>
-      <link>//localhost:1313/posts/exposing-coding-bootcamp-from-an-instructor/</link>
+      <link>http://localhost:1313/posts/2023/12/exposing-coding-bootcamp-from-an-instructor/</link>
       <pubDate>Wed, 06 Dec 2023 16:00:42 -0600</pubDate>
-      <guid>//localhost:1313/posts/exposing-coding-bootcamp-from-an-instructor/</guid>
+      <guid>http://localhost:1313/posts/2023/12/exposing-coding-bootcamp-from-an-instructor/</guid>
       <description>Are coding bootcamps a scam? Are they worth is in 2024?&#xA;I have been a bootcamp instructor for a local coding bootcamp that runs through my local university since 2021. I&amp;rsquo;m currently teaching my 6th bootcamp cohort.&#xA;First, let&amp;rsquo;s define which sub-topics&#xA;Advertising Price Refunds Curriculum Staff Instructors TAs Tutors Graders Career Services Conclusion </description>
     </item>
   </channel>

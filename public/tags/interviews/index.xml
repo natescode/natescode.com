@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Interviews on Hello Friend NG</title>
-    <link>//localhost:1313/tags/interviews/</link>
-    <description>Recent content in Interviews on Hello Friend NG</description>
+    <title>Interviews on natescode blog</title>
+    <link>http://localhost:1313/tags/interviews/</link>
+    <description>Recent content in Interviews on natescode blog</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <copyright>All Rights Reserved</copyright>
     <lastBuildDate>Tue, 02 Apr 2024 16:39:58 -0500</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/interviews/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/interviews/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Software Interviews Explained</title>
-      <link>//localhost:1313/posts/software-interviews-101/</link>
+      <link>http://localhost:1313/posts/2024/04/software-interviews-explained/</link>
       <pubDate>Tue, 02 Apr 2024 16:39:58 -0500</pubDate>
-      <guid>//localhost:1313/posts/software-interviews-101/</guid>
+      <guid>http://localhost:1313/posts/2024/04/software-interviews-explained/</guid>
       <description>Practical Software Interviews A medium article about Google interviews sparked an interesting debate about technical interview methods and questions. I realized that the vast majority of developers have never been the interviewer. Many developers may misunderstand the goals of a technical interview and the vantage point of the technical interviewer. Furthermore, influencers make Leetcode style interviews seem like they&amp;rsquo;re common outside of FAANG; they&amp;rsquo;re not. Here I&amp;rsquo;ll go over how typical software engineer interviews are run as well as debunking some common myths about software interviews.</description>
     </item>
     <item>
       <title>Two Crystal Balls Problem</title>
-      <link>//localhost:1313/posts/two-crystal-ball-problem/</link>
+      <link>http://localhost:1313/posts/2023/03/two-crystal-balls-problem/</link>
       <pubDate>Wed, 29 Mar 2023 02:12:10 -0500</pubDate>
-      <guid>//localhost:1313/posts/two-crystal-ball-problem/</guid>
+      <guid>http://localhost:1313/posts/2023/03/two-crystal-balls-problem/</guid>
       <description>This is a famous software engineering interview question from Google. I thought I&amp;rsquo;d provide my explanation that is borderline pedantic. Let&amp;rsquo;s solve this problem as naively as possible then again with nothing more than highschool maths.&#xA;The Problem There are a few different versions of this question. Sometimes it is crystal balls, or eggs or something else.&#xA;There is a 100 story building. We have two magic glass orbs. The orbs will only break at or above floor X.</description>
     </item>
   </channel>

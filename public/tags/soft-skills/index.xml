@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Soft Skills on Hello Friend NG</title>
-    <link>//localhost:1313/tags/soft-skills/</link>
-    <description>Recent content in Soft Skills on Hello Friend NG</description>
+    <title>Soft Skills on natescode blog</title>
+    <link>http://localhost:1313/tags/soft-skills/</link>
+    <description>Recent content in Soft Skills on natescode blog</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <copyright>All Rights Reserved</copyright>
     <lastBuildDate>Fri, 29 Nov 2024 11:39:31 -0600</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/soft-skills/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/soft-skills/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Productivity Life Hacks for Sofware Engineers</title>
-      <link>//localhost:1313/posts/productivity-hacks/</link>
+      <link>http://localhost:1313/posts/2024/11/productivity-life-hacks-for-sofware-engineers/</link>
       <pubDate>Fri, 29 Nov 2024 11:39:31 -0600</pubDate>
-      <guid>//localhost:1313/posts/productivity-hacks/</guid>
+      <guid>http://localhost:1313/posts/2024/11/productivity-life-hacks-for-sofware-engineers/</guid>
       <description>Productivity Life Hacks for Sofware Engineers.&#xA;My co-worker, Abdullahi, encouraged me to write this post. Since I&amp;rsquo;m on Thanskgiving vacation, I thought why not? Plus, writting this post proves him correct; I&amp;rsquo;m very productive.&#xA;I generally don&amp;rsquo;t think of myself as very productive. I was diagnosed with ADHD, like my father, and I&amp;rsquo;ve always tried to take on too many projects, jobs and challenges at once.&#xA;I work 2 jobs, sometimes 3, I am a father of twin girls that are in school plus I make time to work on NatesCode blog posts, videos, exercise and be a son, boyfriend and play DnD.</description>
     </item>
     <item>
       <title>Software Symptoms vs Problems</title>
-      <link>//localhost:1313/posts/software-symptoms-vs-problems/</link>
+      <link>http://localhost:1313/posts/2024/04/software-symptoms-vs-problems/</link>
       <pubDate>Thu, 18 Apr 2024 00:22:13 -0500</pubDate>
-      <guid>//localhost:1313/posts/software-symptoms-vs-problems/</guid>
+      <guid>http://localhost:1313/posts/2024/04/software-symptoms-vs-problems/</guid>
       <description>Symptoms vs Problems is something I&amp;rsquo;ve run into a lot lately. For example, our production support team has received multiple tickets about a specific screen, let&amp;rsquo;s call it QuickEdit, that allows the users to quickly edit some data. On save, the request will often timeout.&#xA;According to the business, they ask if we can just quickly fix this page. Maybe not allow multi-editing. The issue isn&amp;rsquo;t on the UI, that&amp;rsquo;s just where we see the symptom.</description>
     </item>
   </channel>

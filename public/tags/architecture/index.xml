@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Architecture on Hello Friend NG</title>
-    <link>//localhost:1313/tags/architecture/</link>
-    <description>Recent content in Architecture on Hello Friend NG</description>
+    <title>Architecture on natescode blog</title>
+    <link>http://localhost:1313/tags/architecture/</link>
+    <description>Recent content in Architecture on natescode blog</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <copyright>All Rights Reserved</copyright>
     <lastBuildDate>Sat, 13 Jul 2024 01:29:33 -0500</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/architecture/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/architecture/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Optimize Code by Doing Less</title>
-      <link>//localhost:1313/posts/optimize-code-by-doing-less/</link>
+      <link>http://localhost:1313/posts/2024/07/optimize-code-by-doing-less/</link>
       <pubDate>Sat, 13 Jul 2024 01:29:33 -0500</pubDate>
-      <guid>//localhost:1313/posts/optimize-code-by-doing-less/</guid>
+      <guid>http://localhost:1313/posts/2024/07/optimize-code-by-doing-less/</guid>
       <description>Anytime code needs to be optimized for performance, be that performance in time or memory usage, we can simply say &amp;ldquo;well just do less&amp;rdquo;. I always think &amp;ldquo;do less&amp;rdquo; when I&amp;rsquo;m optimizing code. Here are my thoughts of what exactly &amp;ldquo;do less&amp;rdquo; means by answering &amp;ldquo;Do less of what?&amp;rdquo;.&#xA;&amp;ldquo;Do less of what?&amp;rdquo; &amp;ndash; ME at 01:00 AM&#xA;Do Less: Less Algorithmic Complexity The most intuitive change is to create an algorithm that performance fewer steps.</description>
     </item>
     <item>
       <title>Separation of Concerns Not Code</title>
-      <link>//localhost:1313/posts/separation-of-concerns-not-code/</link>
+      <link>http://localhost:1313/posts/2024/05/separation-of-concerns-not-code/</link>
       <pubDate>Thu, 30 May 2024 10:46:44 -0500</pubDate>
-      <guid>//localhost:1313/posts/separation-of-concerns-not-code/</guid>
+      <guid>http://localhost:1313/posts/2024/05/separation-of-concerns-not-code/</guid>
       <description>I was going to name this post &amp;ldquo;Concerns vs Responsibilities&amp;rdquo; which I&amp;rsquo;ll be covering here anyways.&#xA;S.O.L.I.D starts with S for &amp;ldquo;Single-Responibliity Principle&amp;rdquo;, making sure code: function, object etc. do one thing well. We also have the concept of &amp;ldquo;Separation of Concerns&amp;rdquo;. I think Responsilibities and Concerns get conflated and the definitions get confused. The follow is completely my opinion based on my experience and not anything canon or &amp;ldquo;official&amp;rdquo;.</description>
     </item>
     <item>
       <title>Practical Principles of Programming Paradigms</title>
-      <link>//localhost:1313/posts/programming-paradigms/</link>
+      <link>http://localhost:1313/posts/2024/05/practical-principles-of-programming-paradigms/</link>
       <pubDate>Mon, 13 May 2024 23:45:53 -0500</pubDate>
-      <guid>//localhost:1313/posts/programming-paradigms/</guid>
+      <guid>http://localhost:1313/posts/2024/05/practical-principles-of-programming-paradigms/</guid>
       <description>Ultimately, all software paradigms are made of serveral different applications of code augmentation strategies.&#xA;I wasn&amp;rsquo;t sure what to call this post. I was thinking about how to categorize the different ways software developers add new code to existing code, augmentation. These tie in closely with software paradigms but they are not paradigms in and of themselves.&#xA;I will go over three methods of code augmentation.&#xA;Encapsulation (Composition) High Order Functions (or components) Decorators (Decorator pattern and language features aka attributes) Dependency Injection Middleware / hooks / frameworks Encapsulation is all about wrapping existing code with new code.</description>
     </item>
   </channel>

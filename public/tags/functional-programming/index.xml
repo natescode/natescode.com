@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Functional Programming on Hello Friend NG</title>
-    <link>//localhost:1313/tags/functional-programming/</link>
-    <description>Recent content in Functional Programming on Hello Friend NG</description>
+    <title>Functional Programming on natescode blog</title>
+    <link>http://localhost:1313/tags/functional-programming/</link>
+    <description>Recent content in Functional Programming on natescode blog</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <copyright>All Rights Reserved</copyright>
     <lastBuildDate>Wed, 06 Dec 2023 15:33:15 -0600</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/functional-programming/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/functional-programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dangers of Functional Programming</title>
-      <link>//localhost:1313/posts/dangers-of-functional-programming/</link>
+      <link>http://localhost:1313/posts/2023/12/dangers-of-functional-programming/</link>
       <pubDate>Wed, 06 Dec 2023 15:33:15 -0600</pubDate>
-      <guid>//localhost:1313/posts/dangers-of-functional-programming/</guid>
+      <guid>http://localhost:1313/posts/2023/12/dangers-of-functional-programming/</guid>
       <description>Functional Programming has grown in popularity the last few years. Unfortunately, that also means it has become a bit of a buzzword. Some may call themselves &amp;ldquo;FP nerds&amp;rdquo; while only superficially emulating functional programming.&#xA;Sometimes mimicking functional techniques, especially in a non-functional language, I&amp;rsquo;m looking at you ES2024, is bit inefficient or dangerous. Let&amp;rsquo;s cover some dangers of blindly using FP techniques without understand how they work instead of blindly following some self-proclaimed FP guru (typical FAANG to influencer) told you FP is a panacea.</description>
     </item>
   </channel>

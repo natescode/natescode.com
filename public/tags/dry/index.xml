@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>DRY on Hello Friend NG</title>
-    <link>//localhost:1313/tags/dry/</link>
-    <description>Recent content in DRY on Hello Friend NG</description>
+    <title>DRY on natescode blog</title>
+    <link>http://localhost:1313/tags/dry/</link>
+    <description>Recent content in DRY on natescode blog</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <copyright>All Rights Reserved</copyright>
     <lastBuildDate>Fri, 28 Jun 2024 10:24:34 -0600</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/dry/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/dry/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dry Brittle Code</title>
-      <link>//localhost:1313/posts/dry-brittle-code/</link>
+      <link>http://localhost:1313/posts/2024/06/dry-brittle-code/</link>
       <pubDate>Fri, 28 Jun 2024 10:24:34 -0600</pubDate>
-      <guid>//localhost:1313/posts/dry-brittle-code/</guid>
+      <guid>http://localhost:1313/posts/2024/06/dry-brittle-code/</guid>
       <description>Software Engineer students will hear &amp;ldquo;DRY&amp;rdquo; or Don&amp;rsquo;t Repeat Yourself numerous times as they are learning to design, build and test software. Even professionals will argue over removing duplicate code. Unfortunately, making code DRY isn&amp;rsquo;t as cut-and-dry (pun intended).&#xA;Here is a really simple example of DRY and brittle code. Say we have some CSS like below.&#xA;```css .service-card { font-family: monospace; background-color: #18B218; width: 320px; height: 200px; } .product-card{ font-family: monospace; background-color: #18B218; width: 320px; height: 200px; } ``` Just because there are duplicate values does not mean there are duplicate semantics.</description>
     </item>
   </channel>
