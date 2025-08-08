@@ -1,0 +1,31 @@
+{{ define "main" }}
+<div class="flex flex-col h-[calc(100dvh)]">
+  {{ partial "header.html" . }}
+  <div class="flex flex-col items-center justify-center flex-grow gap-4">
+    <div class="flex flex-col items-center justify-center gap-4">
+      <!-- Name of Website -->
+      <div class="flex flex-col items-center justify-center gap-4">
+        <h1 class="text-5xl font-bold hover:text-sky-400 max-sm:text-4xl">
+          <a href="{{ .Site.BaseURL }}" class="whitespace-nowrap">
+            Nate Hedglin
+          </a>
+        </h1>
+        <p>Beyond Code. Nate's Code.</p>
+      </div>
+      <!-- Navigation for Big Screens -->
+      <div>
+        <ul class="flex flex-row items-center justify-center visible gap-6 text-xl max-sm:hidden">
+          {{ partial "home_menu.html" . }}
+        </ul>
+      </div>
+      <!-- Social -->
+      <div class="flex flex-row gap-6 p-4 border">
+        {{ partial "social.html" . }}
+      </div>
+    </div>
+
+    {{ partial "footer_bottom.html" . }}
+
+  </div>
+</div>
+{{ end }}
