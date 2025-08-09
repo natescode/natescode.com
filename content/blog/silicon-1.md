@@ -1,6 +1,6 @@
 ---
 title: "Silicon: My Own Programming Language'"
-date: 2025-08-08T17:02:45-05:00'
+date: 2025-08-08T17:02:45-05:00
 draft: true 
 toc: false
 images:
