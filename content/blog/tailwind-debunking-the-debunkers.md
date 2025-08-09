@@ -190,7 +190,7 @@ So what do we do about the HTML part of accessibility?
 Tailwind is a CSS library, NOT a component library. 
 
 Tailwind's killer feature, IMHO
-I think Tailwind is GREAT if one is working on a large team with developers that might not have great CSS skills. You don't have to worry about someone copying and pasting a class then renaming it and slightly modifying it. Also, English isn't everyone's first language and spelling mistakes can and do happen. Which makes finding a class by name almost impossible (Yes, I've run into this MANY times. A good reason to enforce spelll checking in PRs).
+I think Tailwind is GREAT if one is working on a large team with developers that might not have great CSS skills. You don't have to worry about someone copying and pasting a class then renaming it and slightly modifying it. Also, English isn't everyone's first language and spelling mistakes can and do happen. Which makes finding a class by name almost impossible (Yes, I've run into this MANY times. A good reason to enforce spell checking in PRs).
 
 Yes, SASS mixins exist but I have rarely seen them consistently done well. That is the killer feature for me. Devs can use tailwind-config-viewer and see 100% of all the classes instantly. Everything is already documented.
 
@@ -208,7 +208,7 @@ HE'S EITHER LYING and over-exaggerating to make his point or genuinely shouldn't
 
 PLEASE if you're gonna hate a tool, at least don't make yourself look like an incompetent dev doing it.
 
-You can see the original code at the [https://javascript.plainenglish.io/tailwind-is-an-anti-pattern-ed3f64f565f0](author's post here).
+You can see the original code at the [author's post here](https://javascript.plainenglish.io/tailwind-is-an-anti-pattern-ed3f64f565f0)
 
 
 The author's disingenous CSS.
@@ -223,20 +223,66 @@ The author's disingenous CSS.
 </div>
 ```
 
-I would instantly deny this pull-request. Firstly, I know this is just an example but 99% of the time the links would be data-driven which remove all of the repetition anyways. Secondly, we CAN remove the repetition by using the `C` in `CSS`. Font size, colors etc all cascade. So we can put them on the parent. That's is the beautiful thing about utility classes in CSS, they ALL have the same specificity! We don't have to worry about some random selector on line 13,370 that does `div > a` overriding our styles. 
+I would instantly deny this pull-request. Firstly, I know this is just an example but 99% of the time the links would be data-driven which remove all of the repetition anyways. Secondly, we CAN remove the repetition by using the `C` in `CSS`. Font size, colors etc all cascade. So we can put them on the parent. That's is the beautiful thing about utility classes in CSS, they ALL have the same specificity! We don't have to worry about some random selector on line 13,370 that does `div > a` overriding our styles. Thirdly, does this guy even understand semantic HTML? We have divs and anchor tags everywhere, is this 2005?
 
+
+The author's version of CSS
 
 ```html
-<div class="hidden font-medium text-gray-500 md:block md:ml-10 md:pr-4 md:space-x-8 ">
-  <a href="#" class="hover:text-hover-gray-900">Product</a>
-  <a href="#" class="hover:text-hover-gray-900">>Features</a>
-  <a href="#" class="hover:text-hover-gray-900">>Marketplace</a>
-  <a href="#" class="hover:text-hover-gray-900">>Company</a>
-  <a href="#" class="text-indigo-600 hover:text-indigo-500">Log in</a>
+<div class="navigation-desktop" role="navigation" aria-label="Main Navigation">
+  <a href="#">Product</a>
+  <a href="#">Features</a>
+  <a href="#">Marketplace</a>
+  <a href="#">Company</a>
+  <a href="#">Log in</a>
 </div>
 ```
 
-SO much cleaner already! Now, unless you're doing PHP and JQuery like it is 2007, you're most likely going to break down this into sematic components. Those could be web components, React or Vue components.
+```css
+.navigation-desktop {
+  display: none;
+}
+.navigation-desktop > a {
+  font-weight: 500;
+  color: rgb(107 114 128);
+}
+.navigation-desktop > a:hover {
+  color: rgb(17 24 39);
+}
+@media (min-width: 768px) {
+  .navigation-desktop {
+    display: block;
+    margin-left: 2.5rem;
+    padding-right: 1rem;
+  }
+  
+  .navigation-desktop > * + * {
+    margin-left: 2rem;
+  }
+}
+
+```
+
+Let's fix the author's ugly Tailwind and unsemantic HTML.
+
+
+```html
+<nav class="hidden font-medium text-gray-500 md:block md:ml-10 md:pr-4 md:space-x-8 ">
+  <ul>
+  <li><a href="#" class="hover:text-hover-gray-900">Product</a></li>
+  <li><a href="#" class="hover:text-hover-gray-900">Features</a></li>
+  <li><a href="#" class="hover:text-hover-gray-900">Marketplace</a></li>
+  <li><a href="#" class="hover:text-hover-gray-900">Company</a></li>
+  <a href="#" class="text-indigo-600 hover:text-indigo-500">Log in</a>
+  </ul>
+</nav>
+```
+
+Cleaner already!
+
+Ironically, I just proved my point. The author's CSS would already be broken! I tried to do a simple HTML refactor to use more semantic HTML components but since his CSS relies on parent-child relationships, it no longer works. Specificity and child selectors are a real pain in CSS; problem that utility classes solve! Now I have to change the CSS too BUT, can I? Remember, other HTML components could be using the `navigation-desktop` component. So now I'll have to make another one. What do I call it? How do I document it? What if we need another almost identical one but for mobile? Maybe we're using sass and mixins. My head hurts, I was just trying to clean up some simple html not refactor the whole website.
+
+Now, unless you're doing PHP and JQuery like it is 2007, you're most likely going to break down this into sematic components. Those could be web components, React or Vue components.
 
 ```html
 <Navigation-Desktop>
@@ -248,7 +294,7 @@ SO much cleaner already! Now, unless you're doing PHP and JQuery like it is 2007
 </div>
 ```
 
-Where is all the `ugly ass HTML` you mentioned? Again, the component has the structure and semantics, NOT the styles.
+Where is all the `ugly ass HTML` you mentioned? Again, the component has the structure and semantics, NOT the styles. Utility classes all have the same specificity!
 
 ## The long-term cost of traditional CSS
 
@@ -259,6 +305,10 @@ Again, how do you avoid duplicate CSS? Do you learn SASS, mixins etc?
 Tell me how *you* would write the CSS for above? Yeah that's the problem, there are about 100 different ways to do it. With Tailwind there is ONE and it'll
 never have to be documented, copy-pasted or duplicated. There is zero maintenance. I haven't fought with CSS specificity for 5 years now!
 
+`tailwind-config-viewer` allows devs to see the auto-documented custom tailwind classes that are generated based on our config
+`tailwind` VS Code plugin automatically sorts tailwind classes AND shows which CSS they contain.
+
+Learning a VERY simple convention like `display-block` and `ml-5` margin left, is a small price to pay to not learn sass, mixins, BEM, manually document CSS etc. Remember, other devs will be looking at 10,000 lines of CSS in the future and wonder which css class to use when.
 
 ## Not a panacea
 

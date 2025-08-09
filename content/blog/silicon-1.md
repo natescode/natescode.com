@@ -25,7 +25,9 @@ You'll may be interested in the tools that I'm using to write Sigil, the canonic
 - Typescript: flexible and statically typed
 - WASM docs: my compilation target
 
-My toolset is minimal. I really just need docs, and an editor.
+My toolset is minimal. 
+
+For those wondering why JavaScript. Well I believe in working backwards from a problem. I chose Ohm, not JavaScript. If a great parser generator was made in OCaml then I would have use that.
 
 ## Process
 
