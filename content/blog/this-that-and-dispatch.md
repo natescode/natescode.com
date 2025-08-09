@@ -35,6 +35,7 @@ greet("natescode");
 If you said the first function, that is _incorrect_.
 
 Javascript _ONLY_ cares about the function name, not the parameters. In the case of duplicate function names, the last one defined wins; just like CSS.
+Other languages like `Java` _do_ care about the function signature. Those two function would be considered different. That is known as function overloading. 
 
 ## Methods vs Functions
 
@@ -57,7 +58,7 @@ var person = Alice;
 person.Greet("natescode");
 ```
 
-Now, even though `Alice` and `Bob` both have `greet` functions, there is no longer a name conflict! Hey, I though Javascript functions had to have unique names? They do, but not methods! Because methods are functions that are related to a specific function. They have their own scope / context.
+Now, even though `Alice` and `Bob` both have `greet` functions, there is no longer a name conflict! Hey, I thought Javascript functions had to have unique names? They do, but not methods! Because methods are functions that are related to a specific function. They have their own scope / context.
 
 Now let's change the example to use the object's context.
 
@@ -83,9 +84,9 @@ Alice.greet("NatesCode");
 
 You'll see I changed the `greet` methods back to a single function. I did this to highlight the fact that methods are just functions executed within an specific object's context. Technically, ALL javascript functions are methods since everything is on the `window` object. The plain `greet` function will _not_ return `null` or `undefined` because the `name` exists as `window.name`; it is usually an empty string though.
 
-You'll the two lines that associate the `Greet` function with both the `Alice` and `Bob` objects.
+There are two lines that associate the `Greet` function with both the `Alice` and `Bob` objects, respectively.
 
-When we call their respecitve `greet` methods, the output changes based on the object the function was called on. Methods, unlike functions, have a special parameter called the _receiver_. This is _really_ obvious in `Go` where the receiver parameter comes before the method name, the same order we call it in.
+When we call their respective `greet` methods, the output changes based on the object the function was called on. Methods, unlike functions, have a special parameter called the _receiver_. This is _really_ obvious in `Go` where the receiver parameter comes before the method name, the same order we call it in.
 
 ```go
 // 'this' could be called anything since it is just a parameter.
@@ -95,9 +96,9 @@ func (this Person) greet(name string){
 }
 ```
 
-## Still unclear? Oh MY!
+## Clear as mud?
 
-To clear up how `this` works. I show you an example in English. Here
+To clear up how `this` works. I'll show you an example in English. Here
 is a script for you to read.
 
 ```
@@ -153,7 +154,7 @@ I hope that clears up at least the basic understanding of `this`.
 
 ## Dispatch
 
-Ok. So hopefully now `this` is starting to make sense. We are now going to take the minecar into the cave of deeper knowledge! Let's talk about dispatch!
+Ok. So hopefully now `this` is starting to make sense. Let's talk about dispatch!
 
 First a code example. Can you tell me which method will be run?
 
@@ -182,7 +183,7 @@ friend.greet();
 
 Hopefully, you answered `no, I cannot predict something inherently random!`. My point exactly. This is called `dynamic dispatch` or `late binding`. Those are just fancy terms for `Let's figure out which method to call on which object when we RUN the code, not before`
 
-In statically typed languages, we know for 100% certainty which type `friend` will be, before the code runs.
+In statically typed languages, we must know for 100% certainty which type `friend` will be, before the code runs.
 
 ## C# Dispatch
 
@@ -221,8 +222,7 @@ var friend = Math.random() > 0.5 ? Alice : Bob;
 friend.greet();
 ```
 
-This code won't even compile. We'll get an `` error. Because we
-don't know which type friend is going to be. The most direct translation would change the last two lines to look like this.
+This code won't even compile. We'll get an error because we don't know which type friend is going to be before we run the program. 
 
 ### Using `dynamic`
 
@@ -328,6 +328,7 @@ struct Person {
     name: String,
 }
 
+// create a method associated with Person
 impl Person {
     fn greet(&self) {
         println!("My name is {}", self.name);
@@ -348,11 +349,42 @@ let bob = Person { name: String::from("Robert") };
 let friend = if rand::random() { Friend::Alice } else { Friend::Bob };
 
 // call greet method on chosen friend
+// Again Rust is statically dispatched by default so we have to manually figure out which method to call
 match friend {
     Friend::Alice => alice.greet(),
     Friend::Bob => bob.greet(),
 }
+```
 
+### Using Dynamic Dispatch with Traits
+
+```Rust
+use rand::random;
+
+struct Person {
+    name: String,
+}
+
+trait Greeter {
+    fn greet(&self);
+}
+
+impl Greeter for Person {
+    fn greet(&self) {
+        println!("My name is {}", self.name);
+    }
+}
+
+fn main() {
+    let alice = Person { name: "Alysan".into() };
+    let bob   = Person { name: "Robert".into() };
+
+    // pick one at runtime, but don’t take ownership
+    let friend: &dyn Greeter = if random() { &alice } else { &bob };
+
+    // dynamic dispatch via a trait object
+    friend.greet();
+}
 ```
 
 \*\* BTW the above Rust code was generated by Chat GPT. I had it translate the previous C# code into rust but use enums for the friend type. The FUUUUTUUURE!

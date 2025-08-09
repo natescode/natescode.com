@@ -229,11 +229,11 @@ I would instantly deny this pull-request. Firstly, I know this is just an exampl
 
 
 ```html
-<div class="hidden font-medium text-gray-500 md:block md:ml-10 md:pr-4 md:space-x-8 hover:text-hover-gray-900">
-  <a href="#">Product</a>
-  <a href="#">Features</a>
-  <a href="#">Marketplace</a>
-  <a href="#">Company</a>
+<div class="hidden font-medium text-gray-500 md:block md:ml-10 md:pr-4 md:space-x-8 ">
+  <a href="#" class="hover:text-hover-gray-900">Product</a>
+  <a href="#" class="hover:text-hover-gray-900">>Features</a>
+  <a href="#" class="hover:text-hover-gray-900">>Marketplace</a>
+  <a href="#" class="hover:text-hover-gray-900">>Company</a>
   <a href="#" class="text-indigo-600 hover:text-indigo-500">Log in</a>
 </div>
 ```
@@ -251,6 +251,16 @@ SO much cleaner already! Now, unless you're doing PHP and JQuery like it is 2007
 ```
 
 Where is all the `ugly ass HTML` you mentioned? Again, the component has the structure and semantics, NOT the styles.
+
+## The long-term cost of traditional CSS
+
+Arguing over verbose "ugly" code is childish. How about in 3 years when more navigations are created? Do developers copy-paste-rename them
+because they're 90% the same but semantically different? How do you document your CSS? Is the CSS tied to a single component or is it all shared? 
+Again, how do you avoid duplicate CSS? Do you learn SASS, mixins etc?
+
+Tell me how *you* would write the CSS for above? Yeah that's the problem, there are about 100 different ways to do it. With Tailwind there is ONE and it'll
+never have to be documented, copy-pasted or duplicated. There is zero maintenance. I haven't fought with CSS specificity for 5 years now!
+
 
 ## Not a panacea
 
