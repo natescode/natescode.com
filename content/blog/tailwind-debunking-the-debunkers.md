@@ -87,8 +87,6 @@ NO @apply is not the answer. If you're using @apply everywhere then you're using
 
 Why are you trying to swap out CSS frameworks regularly?! That's like saying BEM is bad because it requires a ton of refactoring if you switch to SMACSS.
 
-FALSE, switching from Tailwind is pretty easy. I even made an NPM package so you can, called Tailwind-Eject. I'd suggest using Tailwind-Convert (my other package that converts all your CSS to customized Tailwind with custom props and shows you how much space and rendering time you're saving). It reads all the Tailwind classes on your class or className attributes and creates CSS classes for them based on the file name etc.
-
 ## Reason 4: Tailwind's focus on design systems and tokens could mostly be replaced by CSS Custom Properties (aka variables)—which IS a standard.
 
 So then use them WITH Tailwind!!! You supposedly use this tool for a year and didn't figure this out yet? I have tons of variables defined.
@@ -155,7 +153,7 @@ renames CSS, cocky to say designers of CSS are dumb and re-design it: No
 
 div / span soup: Sounds like you don't know how to code
 
-hard to migrate: Tailwind-Eject
+hard to migrate: why are you migrating? Tailwind is just CSS! 
 
 hard to maintain: ROFL, compared to what? Have you worked on enterprise 30MB CSS ?
 
@@ -283,6 +281,6 @@ VERY few people anti-tailwind bloggers actually have valid negative points again
 
 The only way to do this is native CSS. I think a close second is styled components with some linter plugins, which is my new approach I'm trying.
 
-So PLEASE if you're going to rebuttal, do it from a point of logic and competence. I'm not even using tailwind for this blog.
+So please if you're going to rebuttal, do it from a point of logic and competence. ~~I'm not even using tailwind for this blog.~~ (Ironically, the new template actually does use Tailwind!)
 
 Cheers!

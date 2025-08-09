@@ -17,4 +17,16 @@ Meet **Silicon**.
 
 Silicon's main goal is to be a refined language with a flexibly memory management model that primarily targets Web Assembly. Silicon is meant to be simple, flexible and secure. 
 
-    @fn hello_world msg = @@yield print, "hello, world!";
+## Toolbox
+
+You'll may be interested in the tools that I'm using to write Sigil, the canonical compiler implementation for Silicon.
+
+- Ohm.js : parser generator
+- Typescript: flexible and statically typed
+- WASM docs: my compilation target
+
+My toolset is minimal. I really just need docs, and an editor.
+
+## Process
+
+
