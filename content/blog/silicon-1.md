@@ -27,8 +27,32 @@ You'll may be interested in the tools that I'm using to write Sigil, the canonic
 
 My toolset is minimal. 
 
-For those wondering why JavaScript. Well I believe in working backwards from a problem. I chose Ohm, not JavaScript. If a great parser generator was made in OCaml then I would have use that.
+For those wondering why JavaScript. Well I believe in working backwards from a problem. I chose Ohm, not JavaScript. If a great parser generator was made in OCaml then I would have use that. Furthermore, the initial implementation language doesn't matter! That's the beautiful thing about compilers, only the output matters. I will be bootstrapping Silicon/Sigil at some point.
 
 ## Process
+
+Desiging a programming language is difficult. I am my own customer. I've had to pick my main goal and non-goals. I have to figure out their relative order of importance as well.
+
+- target WASM
+- 100% Node API compatability
+- 100% WASI(X) API compatability
+- 100% Browser API compatability
+- fast build times
+- explicity
+- static 
+- simple consistent grammar
+
+
+## Example
+
+Here is the Fibonnaci function is Silicon
+
+```silicon
+@fn fib 1 = 1;
+@fn fib 2 = 2;
+@fn fib n = (&fib n - 1) + (&fib n - 2);
+```
+
+
 
 

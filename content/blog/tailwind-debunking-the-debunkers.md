@@ -5,7 +5,8 @@ draft: false
 toc: false
 images:
 tags:
-  - untagged
+  - css
+  - rebuttal
 ---
 
 I've seen a TON of hate for Tailwind. While I don't care much about which technologies other developers use, I do care when developers spread lies because they are religiously for or against a particular technology. I'm not much of a technology fan-boy; I use what works for the given requirements. Don't get me wrong, I still have plenty of strong opinions but they're more about general techniques, attitudes etc and not about specific libraries or technologies.
@@ -223,7 +224,7 @@ The author's disingenous CSS.
 </div>
 ```
 
-I would instantly deny this pull-request. Firstly, I know this is just an example but 99% of the time the links would be data-driven which remove all of the repetition anyways. Secondly, we CAN remove the repetition by using the `C` in `CSS`. Font size, colors etc all cascade. So we can put them on the parent. That's is the beautiful thing about utility classes in CSS, they ALL have the same specificity! We don't have to worry about some random selector on line 13,370 that does `div > a` overriding our styles. Thirdly, does this guy even understand semantic HTML? We have divs and anchor tags everywhere, is this 2005?
+I would instantly deny this pull-request. Firstly, I know this is just an example but 99% of the time the links would be data-driven which remove all of the repetition anyways. Secondly, we CAN remove the repetition by using the `C` in `CSS`. Font size, colors etc all cascade. So we can put them on the parent. That's is the beautiful thing about utility classes in CSS, they ALL have the same specificity! We don't have to worry about some random selector on line 13,370 that does `div > a` overriding our styles. 
 
 
 The author's version of CSS
@@ -263,7 +264,7 @@ The author's version of CSS
 
 ```
 
-Let's fix the author's ugly Tailwind and unsemantic HTML.
+Let's fix the author's ugly Tailwind and the inherited (he took it from somewhere else) unsemantic HTML.
 
 
 ```html
@@ -280,7 +281,59 @@ Let's fix the author's ugly Tailwind and unsemantic HTML.
 
 Cleaner already!
 
-Ironically, I just proved my point. The author's CSS would already be broken! I tried to do a simple HTML refactor to use more semantic HTML components but since his CSS relies on parent-child relationships, it no longer works. Specificity and child selectors are a real pain in CSS; problem that utility classes solve! Now I have to change the CSS too BUT, can I? Remember, other HTML components could be using the `navigation-desktop` component. So now I'll have to make another one. What do I call it? How do I document it? What if we need another almost identical one but for mobile? Maybe we're using sass and mixins. My head hurts, I was just trying to clean up some simple html not refactor the whole website.
+Ironically, I just proved my point. The author's CSS would already be broken! I tried to do a simple HTML refactor to use more semantic HTML components but since his CSS relies on parent-child relationships, it no longer works. Specificity and child selectors are a real pain in CSS; a problem that utility classes solve! Now I have to change the CSS too BUT, can I? Remember, other HTML components could be using the `navigation-desktop` component. So now I'll have to make another one. What do I call it? How do I document it? What if we need another almost identical one but for mobile? Maybe we're using sass and mixins. My head hurts, I was just trying to clean up some simple html not refactor the whole website.
+
+Furthermore, the author would want to break the CSS colors into custom props. The child selectors shouldn't use tags, they should use classes: do you even BEM bro? Here is my refactor:
+
+```html
+<div class="navigation-desktop" role="navigation" aria-label="Main Navigation">
+  <a class="nav-link" href="#">Product</a>
+  <a class="nav-link" href="#">Features</a>
+  <a class="nav-link" href="#">Marketplace</a>
+  <a class="nav-link" href="#">Company</a>
+  <a class="nav-link" href="#">Log in</a>
+</div>
+```
+
+The CSS
+
+```css
+:root {
+  --nav-font-weight: 500;
+  --nav-color: rgb(107, 114, 128);
+  --nav-hover-color: rgb(17, 24, 39);
+  --nav-margin-left: 2.5rem;
+  --nav-padding-right: 1rem;
+  --nav-link-spacing: 2rem;
+}
+
+.navigation-desktop {
+  display: none;
+}
+
+.navigation-desktop .nav-link {
+  font-weight: var(--nav-font-weight);
+  color: var(--nav-color);
+  text-decoration: none;
+}
+
+.navigation-desktop .nav-link:hover {
+  color: var(--nav-hover-color);
+}
+
+@media (min-width: 768px) {
+  .navigation-desktop {
+    display: block;
+    margin-left: var(--nav-margin-left);
+    padding-right: var(--nav-padding-right);
+  }
+
+  .navigation-desktop .nav-link + .nav-link {
+    margin-left: var(--nav-link-spacing);
+  }
+}
+```
+
 
 Now, unless you're doing PHP and JQuery like it is 2007, you're most likely going to break down this into sematic components. Those could be web components, React or Vue components.
 
@@ -299,7 +352,7 @@ Where is all the `ugly ass HTML` you mentioned? Again, the component has the str
 ## The long-term cost of traditional CSS
 
 Arguing over verbose "ugly" code is childish. How about in 3 years when more navigations are created? Do developers copy-paste-rename them
-because they're 90% the same but semantically different? How do you document your CSS? Is the CSS tied to a single component or is it all shared? 
+because they're 90% the same but semantically different? How do you document your CSS? How am I supposed to know to use `navigation-desktop`? Is the CSS tied to a single component or is it all shared? 
 Again, how do you avoid duplicate CSS? Do you learn SASS, mixins etc?
 
 Tell me how *you* would write the CSS for above? Yeah that's the problem, there are about 100 different ways to do it. With Tailwind there is ONE and it'll
